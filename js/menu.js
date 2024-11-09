@@ -1,4 +1,4 @@
-const openModalButton = document.querySelector(".open-menu-button"); // Кнопка для открытия меню
+const openModalButton = document.querySelector(".open-menu-button");
 const modal = document.querySelector(".menu-header");
 const closeModalButton = document.querySelector(".close-button");
 

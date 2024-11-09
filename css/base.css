@@ -10,12 +10,108 @@
     --paragraph-faq: #333;
     --bg-rose: rgba(252, 121, 180, 0.23);
     --rose2: #e75d88;
-}
-
-:root {
     --font-family: "Montserrat", sans-serif;
     --second-family: "Work Sans", sans-serif;
-    --third-family: "Inter", sans-serif;
-    --font3: "Open Sans", sans-serif;
     --font4: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--font4);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+/* Mobile Styles */
+h1 {
+    font-family: var(--font4);
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.01em;
+    color: var(--colorrose);
+}
+
+h2 {
+    font-family: var(--font4);
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #fff;
+}
+
+h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
+.number {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+
+p {
+    font-family: var(--font4);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -.02em;
+}
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .number {
+        font-size: 60px;
+    }
+
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .number {
+        font-size: 70px;
+    }
+
+    .section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 }
