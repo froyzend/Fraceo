@@ -1,0 +1,21 @@
+:root {
+    --colorblack: #191616;
+    --colorrose: #e13690;
+    --colormaingris: #f2f2f2;
+    --color: var(--colormaingris);
+    --rose-text: rgba(167, 71, 119, 0.67);
+    --color-white2: #f4e2e2;
+    --color-text2: #666;
+    --roseopasity: rgba(246, 9, 127, 0.23);
+    --paragraph-faq: #333;
+    --bg-rose: rgba(252, 121, 180, 0.23);
+    --rose2: #e75d88;
+}
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Work Sans", sans-serif;
+    --third-family: "Inter", sans-serif;
+    --font3: "Open Sans", sans-serif;
+    --font4: "Roboto", sans-serif;
+}

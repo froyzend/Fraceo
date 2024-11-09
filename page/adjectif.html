@@ -9,19 +9,28 @@
   <body>
     <header class="header">
       <div class="container container-header">
+        <a class="logo-link" href="#">
+          <img src="../img/logo.png" alt="Françeó" loading="lazy" />
+        </a>
         <!--Menu-->
         <nav class="header-menu">
-          <a class="logo-link" href="#">Françeó</a>
           <ul class="menu menu-container">
-            <li><a class="menu-link" href="/index.html">Home</a></li>
+            <li><a class="menu-link" href="../index.html">Home</a></li>
             <li>
               <a class="menu-link" href="#">Adjectif</a>
             </li>
-            <li><a class="menu-link" href="#">Cours</a></li>
-            <li>
-              <a class="menu-link" href="/page/resourse.html">Resourse</a>
+            <li class="dropdown">
+              <a class="menu-link" href="./cours.html">Cours</a>
+              <ul class="dropdown-content">
+                <li><a href="#">Cours 1</a></li>
+                <li><a href="#">Cours 2</a></li>
+                <li><a href="#">Cours 3</a></li>
+              </ul>
             </li>
-            <li><a class="menu-link" href="/page/faq.html">Contact Us</a></li>
+            <li>
+              <a class="menu-link" href="./resourse.html">Resourse</a>
+            </li>
+            <li><a class="menu-link" href="./page/faq.html">Contact Us</a></li>
           </ul>
         </nav>
       </div>
