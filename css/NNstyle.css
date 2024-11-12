@@ -1,0 +1,28 @@
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    min-height: 400px; /* Increase this value to make the cards taller */
+}
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-body p {
+    margin: 0;
+}
+.card-yellow {
+    background: linear-gradient(135deg, #fff9c4, #ffe082);
+}
+.card-pink {
+    background: linear-gradient(135deg, #f8bbd0, #f48fb1);
+  
+}
+.card-blue {
+    background: linear-gradient(135deg, #b3e5fc, #81d4fa);
+  
+}
