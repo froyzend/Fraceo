@@ -15,14 +15,32 @@
 .card-body p {
     margin: 0;
 }
+.card a{
+    text-decoration: none;
+    color: #000;
+}
 .card-yellow {
     background: linear-gradient(135deg, #fff9c4, #ffe082);
+    transition: transform 0.3s ease-in-out;
 }
 .card-pink {
     background: linear-gradient(135deg, #f8bbd0, #f48fb1);
+    transition: transform 0.3s ease-in-out;
   
 }
 .card-blue {
     background: linear-gradient(135deg, #b3e5fc, #81d4fa);
+    transition: transform 0.3s ease-in-out;
+  
+}
+.card-yellow:hover {
+    transform: scale(1.1);
+}
+.card-pink:hover {
+    transform: scale(1.1);
+  
+}
+.card-blue:hover {
+    transform: scale(1.1);
   
 }
