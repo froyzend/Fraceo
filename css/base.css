@@ -1,4 +1,11 @@
 :root {
+    --pink-lightest: #fff0f3;
+    --pink-light: #ffe0e6;
+    --pink-medium: #ffb3c0;
+    --pink-dark: #ff8da1;
+    --text-dark: #2d3436;
+    --text-gray: #636e72;
+
     --colorblack: #191616;
     --colorrose: #e13690;
     --colormaingris: #f2f2f2;
@@ -20,7 +27,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.01em;
-    color: #fff;
+    color: #666;
 }
 
 /* Mobile Styles */
