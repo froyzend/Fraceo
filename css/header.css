@@ -11,9 +11,6 @@
     padding-bottom: 20px;
 }
 
-/*Header list Mobile first  Test branch*/
-
-
 .menu-header {
     display: none;
 }
@@ -80,7 +77,7 @@
 
 
 
-@media screen and (min-width: 1128px) {
+@media only screen and (min-width: 1280px) {
 
     .menu-container {
         display: flex;
