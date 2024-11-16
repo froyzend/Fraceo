@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resourse</title>
-    
+    <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body>
     <header class="header">
@@ -52,28 +52,28 @@
         <div class="course-intro container">
             <h2>Objectifs du Cours</h2>
             <p>À la fin du cours, les étudiants seront capables de :</p>
-            <ul>
-                <li>Se présenter et faire connaissance</li>
-                <li>Poser et répondre à des questions simples</li>
-                <li>Mener des conversations basiques sur des sujets familiers</li>
+            <ul class="course-list">
+                <li class="rule-item">Se présenter et faire connaissance</li>
+                <li class="rule-item">Poser et répondre à des questions simples</li>
+                <li class="rule-item">Mener des conversations basiques sur des sujets familiers</li>
             </ul>
         </div>
 </section>
 <section>
         <div class="week-block container">
             <h3 class="week-title">Semaines 1-2: Introduction et Salutations</h3>
-            <div class="section">
+            <div>
                 <h4 class="section-title">Vocabulaire</h4>
-                <ul>
-                    <li>Salutations et au revoir</li>
-                    <li>Nombres 1-20</li>
+                <ul class="rule-list">
+                    <li class="rule-item">Salutations et au revoir</li>
+                    <li class="rule-item">Nombres 1-20</li>
                 </ul>
             </div>
-            <div class="section">
+            <div>
                 <h4 class="section-title">Grammaire</h4>
-                <ul>
-                    <li>Le verbe "être"</li>
-                    <li>Pronoms personnels</li>
+                <ul class="rule-list">
+                    <li class="rule-item">Le verbe "être"</li>
+                    <li class="rule-item">Pronoms personnels</li>
                 </ul>
             </div>
         </div>
@@ -82,18 +82,18 @@
 <section>
         <div class="week-block container">
           <h3 class="week-title">Semaines 3-4: Se Présenter</h3>
-            <div class="section">
+            <div>
                 <h4 class="section-title">Vocabulaire</h4>
-                <ul>
-                    <li>Famille et professions</li>
-                    <li>Nationalités</li>
+                <ul class="rule-list">
+                    <li class="rule-item">Famille et professions</li>
+                    <li class="rule-item">Nationalités</li>
                 </ul>
             </div>
-            <div class="section">
+            <div>
                 <h4 class="section-title">Grammaire</h4>
-                <ul>
-                    <li>Le verbe "avoir"</li>
-                    <li>Adjectifs (genre et nombre)</li>
+                <ul class="rule-list">
+                    <li class="rule-item">Le verbe "avoir"</li>
+                    <li class="rule-item">Adjectifs (genre et nombre)</li>
                 </ul>
             </div>
         </div>
@@ -102,45 +102,86 @@
 <section>
         <div class="week-block container">
             <h3 class="week-title">Semaines 5-6: La Vie Quotidienne</h3>
-            <div class="section">
+            <div>
                 <h4 class="section-title">Vocabulaire</h4>
-                <ul>
-                    <li>Jours de la semaine</li>
-                    <li>Activités quotidiennes</li>
+                <ul class="rule-list">
+                    <li class="rule-item">Jours de la semaine</li>
+                    <li class="rule-item">Activités quotidiennes</li>
                 </ul>
             </div>
-            <div class="section">
+            <div>
                 <h4 class="section-title">Grammaire</h4>
-                <ul>
-                    <li>Verbes en -ER</li>
-                    <li>La négation</li>
+                <ul class="rule-list">
+                    <li class="rule-item">Verbes en -ER</li>
+                    <li class="rule-item">La négation</li>
                 </ul>
             </div>
         </div>
 </section>
-
+<!-- 
 <section>
         <div class="resources-section container">
             <h2>Ressources Utiles</h2>
             <div class="resource-item">
                 <h4>Plateformes d'apprentissage</h4>
                 <ul>
-                    <li><a href="#">TV5Monde</a> - Exercices interactifs</li>
-                    <li><a href="#">Duolingo</a> - Activités pour débutants</li>
-                    <li><a href="#">Lingolia</a> - Explications grammaticales</li>
+                    <li><a class="resource-link" href="#">TV5Monde</a> - Exercices interactifs</li>
+                    <li><a class="resource-link" href="#">Duolingo</a> - Activités pour débutants</li>
+                    <li><a class="resource-link" href="#">Lingolia</a> - Explications grammaticales</li>
                 </ul>
             </div>
             <div class="resource-item">
                 <h4>Ressources Supplémentaires</h4>
                 <ul>
-                    <li><a href="#">BBC Bitesize French</a> - Compréhension orale</li>
-                    <li><a href="#">La conjugaison</a> - Exercices de conjugaison</li>
-                    <li><a href="#">Chaines YouTube recommandées</a> - Français Authentique</li>
+                    <li><a class="resource-link" href="#">BBC Bitesize French</a> - Compréhension orale</li>
+                    <li><a class="resource-link" href="#">La conjugaison</a> - Exercices de conjugaison</li>
+                    <li><a class="resource-link" href="#">Chaines YouTube recommandées</a> - Français Authentique</li>
                 </ul>
             </div>
         </div>
-  </section>
-
+  </section>-->
+  <section>
+    <h2>Ressources Utiles</h2>
+<div class="resource-cards container">
+  <ul class="listCard">
+    <li class="itemCard">
+  <div class="card red">
+    <h3>Introduction à la langue française</h3>
+    <p>Apprenez les bases essentielles pour vous présenter et comprendre des phrases simples.</p>
+    <a href="#">Voir plus de ressources inductives</a>
+  </div>
+  </li>
+  <li class="itemCard">
+  <div class="card blue">
+    <h3>Grammaire fondamentale</h3>
+    <p>Maîtrisez les structures grammaticales de base pour construire des phrases correctes.</p>
+    <a href="#">Cours de grammaire A1</a>
+  </div>
+</li>
+<li class="itemCard">
+  <div class="card green">
+    <h3>Vocabulaire pour la vie quotidienne</h3>
+    <p>Communiquez dans des situations courantes et développez votre vocabulaire.</p>
+    <a href="#">Liste de vocabulaire utile</a>
+  </div>
+</li>
+<li class="itemCard">
+  <div class="card purple ">
+    <h3>Communication en français</h3>
+    <p>Interagissez dans des dialogues simples et exprimez vos goûts.</p>
+    <a href="#">Exemples de dialogues quotidiens</a>
+  </div>
+</li>
+<li class="itemCard">
+  <div class="card orange">
+    <h3>Verbes et conjugaison de base</h3>
+    <p>Utilisez les verbes pour exprimer des actions simples et des préférences.</p>
+    <a href="#">Conjugaisons interactives</a>
+  </div>
+</li>
+  </ul>
+</div>
+</section>
     </main>
     <footer class="footer">
       <div class="container footer-container">

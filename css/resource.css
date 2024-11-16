@@ -1,4 +1,4 @@
-  /*.course-intro {
+  .course-intro {
       background-color: var(--pink-light);
       padding: 1.5rem;
       border-radius: 8px;
@@ -21,9 +21,6 @@
       padding-bottom: 0.5rem;
   }
 
-  .section {
-      margin: 1rem 0;
-  }
 
   .section-title {
       color: var(--pink-dark);
@@ -31,18 +28,12 @@
       margin-bottom: 0.5rem;
   }
 
-  ul {
-      list-style-type: none;
-      padding-left: 0;
-  }
+  .rule-item {
 
-  li {
-      margin: 0.5rem 0;
-      padding-left: 1.2rem;
       position: relative;
   }
 
-  li::before {
+  .rule-item::before {
       content: "•";
       color: var(--pink-medium);
       position: absolute;
@@ -70,11 +61,88 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
 
-  a {
+  .resource-link {
       color: var(--pink-dark);
       text-decoration: none;
   }
 
-  a:hover {
+  .resource-link:hover {
       text-decoration: underline;
+  }
+
+  .resource-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+  }
+
+
+  /*
+  .card.red {
+      border-top: 5px solid #FF6B6B;
+  }
+
+  .card.blue {
+      border-top: 5px solid #5DADE2;
+  }
+
+  .card.green {
+      border-top: 5px solid #58D68D;
+  }
+
+  .card.purple {
+      border-top: 5px solid #9B59B6;
+  }
+
+  .card.orange {
+      border-top: 5px solid #F39C12;
+  }
+
+  .card h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #333;
+  }
+
+  .card p {
+      margin-bottom: 20px;
+      color: #666;
+  }
+
+  .card a {
+      color: #007bff;
+      text-decoration: none;
+  }
+
+  .card a:hover {
+      text-decoration: underline;
+  }
+
+  .card {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }*/
+
+  .listCard {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .listCard .itemCard {
+      margin: 0 20px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      background: linear-gradient(90deg, #a8e6cf 0%, #2c6b51 100%);
+      transform: translateY(0);
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .listCard .itemCard:nth-child(even) {
+      transform: translateY(20px);
+  }
+
+  .listCard .itemCard:hover {
+      transform: translateY(-10px);
+  }
