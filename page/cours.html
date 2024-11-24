@@ -28,7 +28,7 @@
               <a class="menu-link" href="#">Cours</a>
               <ul class="dropdown-content">
                 <li><a class="drop-link" href="#">Grammaire</a></li>
-                <li><a class="drop-link" href="#">Vocabulaire</a></li>
+                <li><a class="drop-link" href="./vocabulaire.html">Vocabulaire</a></li>
                 <li><a class="drop-link" href="#">Exercices</a></li>
               </ul>
             </li>
@@ -41,28 +41,69 @@
       </div>
     </header>
     <main>
- <section>
+ <section class="padding">
   <div class="container">
-    <h1>Grammaire Française</h1>
-    <p>Les bases de la grammaire française</p>
+    <h2 class="grammaire-title">Grammaire Française</h2>
+    <p class="grammaire-context">Les bases de la grammaire française</p>
 
-    <h2 class="section-title">1. Structure de Base des Phrases</h2>
-    <p>
+    <div class="container-rule">
+    <h3 class="grammaire-subtitle">1. Structure de Base des Phrases</h3>
+    <p class="grammaire-rule">
       En français, la structure typique d'une phrase suit le modèle
       Sujet-Verbe-Objet (SVO), similaire à l'anglais.
     </p>
-
+ <h4 class="example">Exemple:</h4>
     <div class="example-box">
-      <h4>Exemple:</h4>
-      <p>Je mange une pomme.</p>
-      <p><em>Je</em> (Sujet) <em>mange</em> (Verbe) <em>une pomme</em> (Objet)</p>
+      
+      <ul class="example-list">
+  <li>
+    <p class="grammaire-text">Je mange une pomme.</p>
+    <p class="grammaire-text">
+      <em>Je</em> <span class="highlight">(Sujet)</span> 
+      <em>mange</em> <span class="highlight">(Verbe)</span> 
+      <em>une pomme</em> <span class="highlight">(Objet)</span>
+    </p>
+  </li>
+  <li>
+    <p class="grammaire-text">Elle parle français.</p>
+    <p class="grammaire-text">
+      <em>Elle</em> <span class="highlight">(Sujet)</span> 
+      <em>parle</em> <span class="highlight">(Verbe)</span> 
+      <em>français</em> <span class="highlight">(Objet)</span>
+    </p>
+  </li>
+  <li>
+    <p class="grammaire-text">Nous étudions les mathématiques.</p>
+    <p class="grammaire-text">
+      <em>Nous</em> <span class="highlight">(Sujet)</span> 
+      <em>étudions</em> <span class="highlight">(Verbe)</span> 
+      <em>les mathématiques</em> <span class="highlight">(Objet)</span>
+    </p>
+  </li>
+  <li>
+    <p class="grammaire-text">Il lit un livre intéressant.</p>
+    <p class="grammaire-text">
+      <em>Il</em> <span class="highlight">(Sujet)</span> 
+      <em>lit</em> <span class="highlight">(Verbe)</span> 
+      <em>un livre intéressant</em> <span class="highlight">(Objet)</span>
+    </p>
+  </li>
+</ul>
+
+    
+    <div class="video">
+      <iframe class="border" width="560" height="400" src="https://www.youtube.com/embed/YMYACKmUgwU" title="La phrase simple et la phrase complexe (juxtaposée, coordonnée subordonnée/ relative/complétive...)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+    </div>
+  </div>
   </div>
 </section>
 
-<section class="grammar-section">
+<section class="grammar-section padding">
   <div class="container">
-    <h2 class="section-title">2. Pronoms Personnels</h2>
+    <h2 class="grammaire-subtitle">2. Pronoms Personnels</h2>
+    
+    <div class="example-box reverse">
         <table class="conjugation-table">
       <tr>
         <th>Pronom</th>
@@ -92,36 +133,167 @@
         <td>Ils/Elles</td>
         <td>They (masculine/feminine)</td>
       </tr>
-    </table>
+        </table>
+        
+       <div>
+          <ul class="example-list grid-list">
+          <li>
+            <h4 class="example">Exemple:</h4>
+          </li>
+    <li>
+      <p class="grammaire-text">
+        <strong>Je</strong> suis étudiant. <br>
+        <span class="highlight">("I am a student.")</span>
+      </p>
+    </li>
+    <li>
+      <p class="grammaire-text">
+        <strong>Tu</strong> as un stylo ? <br>
+        <span class="highlight">("Do you have a pen?")</span>
+      </p>
+    </li>
+    <li>
+      <p class="grammaire-text">
+        <strong>Il</strong> aime le football. <br>
+        <span class="highlight">("He likes football.")</span>
+      </p>
+    </li>
+    <li>
+      <p class="grammaire-text">
+        <strong>Nous</strong> allons au cinéma ce soir. <br>
+        <span class="highlight">("We are going to the cinema tonight.")</span>
+      </p>
+    </li>
+    <li>
+      <p class="grammaire-text">
+        <strong>Vous</strong> parlez anglais ? <br>
+        <span class="highlight">("Do you speak English?")</span>
+      </p>
+    </li>
+    <li>
+      <p class="grammaire-text">
+        <strong>Elles</strong> sont en vacances. <br>
+        <span class="highlight">("They are on vacation.")</span>
+      </p>
+    </li>
+          </ul>
+      </div>
+   
+ </div>
   </div>
 </section>
 
-<section class="grammar-section">
+<section class="grammar-section padding">
   <div class="container">
-    <h2 class="section-title">3. Conjugaison au Présent</h2>
-    <p>Les verbes réguliers en français se divisent en trois groupes: -er, -ir, et -re.</p>
+    <h2 class="grammaire-subtitle">3. Conjugaison au Présent</h2>
+    <p class="grammaire-rule">
+      En français, les verbes réguliers se divisent en trois groupes selon leur terminaison : 
+      <strong>-er</strong>, <strong>-ir</strong>, et <strong>-re</strong>. 
+      Voici comment conjuguer un verbe régulier du premier groupe (-er) au présent.
+    </p>
+    <ul class="highlight padding">
+      <li>Exemple : parler (to speak)</li>
+      <li class="grammaire-text">Étape 1 : Retirez la terminaison <strong>-er</strong> du verbe. Vous obtenez le radical : <em>parl-</em>.</li>
+      <li class="grammaire-text">Étape 2 : Ajoutez les terminaisons spécifiques pour chaque sujet.</li>
+      </ul>
     <div class="example-box">
-      <h4>Verbe en -er: parler (to speak)</h4>
-      <table class="conjugation-table">
-        <tr>
-          <td>Je parle</td>
-          <td>Nous parlons</td>
-        </tr>
-        <tr>
-          <td>Tu parles</td><td>Vous parlez</td>
-        </tr>
-        <tr>
-          <td>Il/Elle parle</td>
-          <td>Ils/Elles parlent</td>
-        </tr>
+
+      <div class="verb-list">
+          <div class="verb-card">
+            <p class="person"><strong>Je:</strong> parle</p>
+            <p class="meaning">I speak</p>
+          </div>
+          <div class="verb-card">
+            <p class="person"><strong>Tu:</strong> parles</p>
+            <p class="meaning">You speak (informal)</p>
+          </div>
+          <div class="verb-card">
+            <p class="person"><strong>Il/Elle:</strong> parle</p>
+            <p class="meaning">He/She speaks</p>
+          </div>
+          <div class="verb-card">
+            <p class="person"><strong>Nous:</strong> parlons</p>
+            <p class="meaning">We speak</p>
+          </div>
+        <div class="verb-card">
+          <p class="person"><strong>Vous:</strong> parlez</p>
+          <p class="meaning">You speak (formal/plural)</p>
+        </div>
+        <div class="verb-card">
+          <p class="person"><strong>Ils/Elles:</strong> parlent</p>
+          <p class="meaning">They speak</p>
+        </div>
+      </div>
+      
+      <table class="conjugation-table table-tablet">
+        <thead>
+          <tr>
+            <th>Personne</th>
+            <th>Conjugaison</th>
+            <th>Traduction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Je</td>
+            <td>parle</td>
+            <td>I speak</td>
+          </tr>
+          <tr>
+            <td>Tu</td>
+            <td>parles</td>
+            <td>You speak (informal)</td>
+          </tr>
+          <tr>
+            <td>Il/Elle</td>
+            <td>parle</td>
+            <td>He/She speaks</td>
+          </tr>
+          <tr>
+            <td>Nous</td>
+            <td>parlons</td>
+            <td>We speak</td>
+          </tr>
+          <tr>
+            <td>Vous</td>
+            <td>parlez</td>
+            <td>You speak (formal/plural)</td>
+          </tr>
+          <tr>
+            <td>Ils/Elles</td>
+            <td>parlent</td>
+            <td>They speak</td>
+          </tr>
+        </tbody>
       </table>
+      <ul class="example-list">
+        <li><h4 class="example">Phrase simple :</h4>
+        </li>
+        <li>
+          <p class="grammaire-text"><strong>Je parle</strong> français.</p>
+          <p class="grammar-tip">("I speak French.")</p>
+        </li>
+        <li>
+          <p class="grammaire-text"><strong>Nous parlons</strong> avec le professeur.</p>
+          <p class="grammar-tip">("We are speaking with the teacher.")</p>
+        </li>
+        <li>
+          <p class="grammaire-text"><strong>Ils parlent</strong> très vite.</p>
+          <p class="grammar-tip">("They speak very fast.")</p>
+        </li>
+      </ul>
     </div>
+    <p class="grammaire-text">
+      <strong>Note :</strong> La conjugaison des verbes réguliers suit ce modèle, mais il existe aussi des verbes irréguliers
+      qui doivent être appris séparément.
+    </p>
   </div>
 </section>
 
-<section class="grammar-section">
+
+<section class="grammar-section padding">
   <div class="container">
-    <h2 class="section-title">4. Articles</h2>
+    <h2 class="grammaire-subtitle">4. Articles</h2>
     <div class="note">
       <h4>Articles Définis (the):</h4>
       <ul class="rule-list">
@@ -141,12 +313,12 @@
   </div>
 </section>
 
-<section class="grammar-section">
+<section class="grammar-section padding">
   <div class="container">
-    <h2 class="section-title">5. La Négation</h2>
-    <p>Pour former une phrase négative, on place "ne" avant le verbe et "pas" après.</p>
-    <div class="example-box">
-      <h4>Exemples:</h4>
+    <h2 class="grammaire-subtitle">5. La Négation</h2>
+    <p class="grammaire-rule">Pour former une phrase négative, on place "ne" avant le verbe et "pas" après.</p>
+    <div>
+      <h4 class="example">Exemples:</h4>
       <ul class="rule-list">
         <li>Je ne parle pas anglais. (I don't speak English)</li>
         <li>Il n'aime pas le chocolat. (He doesn't like chocolate)</li>
@@ -155,9 +327,9 @@
   </div>
 </section>
 
-<section class="grammar-section">
+<section class="grammar-section padding">
   <div class="container">
-    <h2 class="section-title">7. Adjectifs Possessifs</h2>
+    <h2 class="grammaire-subtitle">7. Adjectifs Possessifs</h2>
     <table class="conjugation-table">
       <tr>
         <th>Personne</th>
@@ -202,9 +374,9 @@
   </div>
 </section>
 
-<section class="grammar-section">
+<section class="grammar-section padding">
   <div class="container">
-    <h2 class="section-title">14. Forme de l'Impératif</h2>
+    <h2 class="grammaire-subtitle">14. Forme de l'Impératif</h2>
     <table class="conjugation-table">
       <tr>
         <th>Personne</th>
@@ -234,9 +406,9 @@
   </div>
 </section>
 
-<section class="grammar-section">
+<section class="grammar-section padding">
   <div class="container">
-    <h2 class="section-title">15. Verbes Réfléchis</h2>
+    <h2 class="grammaire-subtitle">15. Verbes Réfléchis</h2>
     <table class="conjugation-table">
       <tr> 
         <th>Personne</th> 
@@ -270,9 +442,9 @@
   </div>
 </section>
 
-<section class="grammar-section">
+<section class="grammar-section padding">
   <div class="container">
-    <h2 class="section-title">18. Futur Proche</h2>
+    <h2 class="grammaire-subtitle">18. Futur Proche</h2>
     <table class="conjugation-table">
       <tr>
         <th>Personne</th>
@@ -314,23 +486,23 @@
 </section>
 
 
-<section class="grammar-section">
+<section class="grammar-section padding">
   <div class="container">
-    <h2 class="section-title">19. Vocabulaire de la Famille</h2>
-    <p>Les membres de la famille.</p>
-    <div class="example-box">
-      <h4>Exemples:</h4>
+    <h2 class="grammaire-subtitle">19. Vocabulaire de la Famille</h2>
+    <p class="grammaire-rule">Les membres de la famille.</p>
+    <div>
+      <h4 class="example">Exemples:</h4>
       <p>Mon père, ma mère, mon frère, ma sœur</p>
     </div>
   </div>
 </section>
 
-<section class="grammar-section">
+<section class="grammar-section padding">
   <div class="container">
-    <h2 class="section-title">20. Comparaisons Simples</h2>
-    <p>Les structures de comparaison: plus … que, moins … que, aussi … que.</p>
-    <div class="example-box">
-      <h4>Exemples:</h4>
+    <h2 class="grammaire-subtitle">20. Comparaisons Simples</h2>
+    <p class="grammaire-rule">Les structures de comparaison: plus … que, moins … que, aussi … que.</p>
+    <div>
+      <h4 class="example">Exemples:</h4>
       <p>Elle est plus grande que lui. (She is taller than him)</p>
       <p>Il est aussi intelligent qu'elle. (He is as smart as her)</p>
     </div>
@@ -357,7 +529,7 @@
               <a class="footer-link" href="#">Cours</a>
               <ul class="footer-dropdown-content">
                 <li><a class="drop-link" href="#">Grammaire</a></li>
-                <li><a class="drop-link" href="#">Vocabulaire</a></li>
+                <li><a class="drop-link" href="./vocabulaire.html">Vocabulaire</a></li>
                 <li><a class="drop-link" href="#">Exercices</a></li>
               </ul>
             </li>
