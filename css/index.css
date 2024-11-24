@@ -46,6 +46,115 @@
     display: none;
 }
 
+/**********objective-section*********/
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line on smaller screens */
+}
+
+.card hr {
+    border: none;
+    border-top: 1px solid #1c1c1c;
+    margin: 0 0 20px 0;
+}
+
+
+.card::after {
+    content: '→';
+    color: #000;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5em;
+}
+
+.objective-section {
+    background: var(--colorblack);
+    color: #fff;
+    width: 100%;
+}
+
+.card {
+    /* width: 80%; */
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    min-height: 400px;
+    /* Increase this value to make the cards taller */
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card-body p {
+    margin: 0;
+}
+
+.card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.first-card {
+    background-image: url("../img/ww.jpg");
+    position: relative;
+    object-fit: cover;
+    /* background: linear-gradient(to right, #ff7eb9, #a2efff); */
+    transition: transform 0.3s ease-in-out;
+}
+
+.second-card {
+    background-image: url("../img/qq.jpg");
+    position: relative;
+    object-fit: cover;
+    /* background: linear-gradient(to right, #77acf1, #ffc48c); Blue to Light Orange */
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.third-card {
+    background-image: url("../img/sdsd.jpg");
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+    /* background: linear-gradient(to right, #ffec65, #d1c4e9); Yellow to Light Purple */
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.first-card:hover {
+    transform: scale(1.1);
+}
+
+.second-card:hover {
+    transform: scale(1.1);
+
+}
+
+.third-card:hover {
+    transform: scale(1.1);
+
+}
+
+/******************************************/
+
 @media (min-width: 768px) {
 
     .hero-wrapper {
@@ -76,6 +185,13 @@
         background-color: #ff69b4;
         border-radius: 50%;
     }
+
+
+
+    /**********objective-section*********/
+
+
+    /*********************************************/
 
 }
 
@@ -110,75 +226,4 @@
     .hero-image img {
         width: min(100%, 530px);
     }
-}
-
-.objective-section {
-    background: var(--colorblack);
-    color: #fff;
-    width: 100%;
-}
-
-.card {
-    width: 80%;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    min-height: 400px;
-    /* Increase this value to make the cards taller */
-}
-
-.card-header {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.card-body p {
-    margin: 0;
-}
-
-.card a {
-    text-decoration: none;
-    color: #000;
-}
-
-.first-card {
-    background-image: url("../img/ww.jpg");
-    object-fit: cover;
-    /* background: linear-gradient(to right, #ff7eb9, #a2efff); */
-    transition: transform 0.3s ease-in-out;
-}
-
-.second-card {
-    background-image: url("../img/qq.jpg");
-    object-fit: cover;
-    /* background: linear-gradient(to right, #77acf1, #ffc48c); Blue to Light Orange */
-    transition: transform 0.3s ease-in-out;
-
-}
-
-.third-card {
-    background-image: url("../img/sdsd.jpg");
-    object-fit: cover;
-    height: 100%;
-    /* background: linear-gradient(to right, #ffec65, #d1c4e9); Yellow to Light Purple */
-    transition: transform 0.3s ease-in-out;
-
-}
-
-.first-card:hover {
-    transform: scale(1.1);
-}
-
-.second-card:hover {
-    transform: scale(1.1);
-
-}
-
-.third-card:hover {
-    transform: scale(1.1);
-
 }
