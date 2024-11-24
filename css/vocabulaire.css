@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.vocab-header {
+    background: linear-gradient(135deg, #f7a1c4, #fbc2eb);
+    text-align: center;
+    padding: 2rem 1rem;
+    color: white;
+}
+
+.vocab-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.vocab-header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+.vocab-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+}
+
+.vocab-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.vocab-media img,
+.vocab-media video {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.vocab-media img:hover,
+.vocab-media video:hover {
+    transform: scale(1.05);
+}
+
+.section-title {
+    color: #e91e63;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+.rule-list {
+    margin: 1rem 0;
+    padding-left: 20px;
+}
+
+.quiz-button {
+    background-color: #e91e63;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-button:hover {
+    background-color: #d81b60;
+}
+
+@media (max-width: 768px) {
+    .vocab-media {
+        flex-direction: column;
+        align-items: center;
+    }
+}

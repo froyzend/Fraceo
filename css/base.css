@@ -30,7 +30,7 @@ body {
     color: #666;
 }
 
-/* Mobile Styles */
+/* Mobile Styles 
 h1 {
     font-family: var(--font4);
     font-weight: 600;
@@ -54,7 +54,7 @@ h3 {
     font-size: 16px;
     color: #fff;
 }
-
+*/
 .number {
     font-family: var(--second-family);
     font-weight: 700;
@@ -77,6 +77,8 @@ p {
 
 
 @media (min-width: 768px) {
+
+    /*
     h1 {
         font-size: 48px;
     }
@@ -88,7 +90,7 @@ p {
     h3 {
         font-size: 18px;
     }
-
+*/
     .number {
         font-size: 60px;
     }
@@ -101,6 +103,8 @@ p {
 
 /* Desktop Styles */
 @media only screen and (min-width: 1280px) {
+
+    /*
     h1 {
         font-size: 66px;
     }
@@ -112,7 +116,7 @@ p {
     h3 {
         font-size: 20px;
     }
-
+*/
     .number {
         font-size: 70px;
     }
