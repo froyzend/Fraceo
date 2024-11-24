@@ -1,5 +1,6 @@
 .hero {
-    background-color: #000;
+    background-color: var(--colorblack);
+    ;
     display: grid;
 }
 
@@ -11,13 +12,17 @@
 
 
 .hero-title {
-    margin-bottom: 1rem;
+    font-family: var(--font4);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--colorrose);
 }
 
 .hero-text {
-    font-family: var(--font4);
-    font-weight: 300;
-    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+
     letter-spacing: 0.01em;
     color: #fff;
     margin-bottom: 1.5rem;
@@ -29,9 +34,10 @@
     background: linear-gradient(90deg, #e13690 0.52%, #f97e83 100%);
     padding: 0.75rem 2rem;
     border: none;
+    outline: none;
     margin-bottom: 15px;
-    font-size: 1rem;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in-out;
+    font-size: 20px;
+    transition: background 0.3s ease-in-out;
 }
 
 .hero-button:hover {
