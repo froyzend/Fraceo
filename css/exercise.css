@@ -1,0 +1,23 @@
+ body {
+     font-family: Arial, sans-serif;
+ }
+
+ .exercise {
+     border-bottom: 1px solid #ddd;
+     padding: 24px 32px;
+ }
+
+ .exercise p {
+     margin-bottom: 10px;
+ }
+
+ button {
+     margin-top: 10px;
+ }
+
+ .exercices-title {
+     font-family: var(--second-family);
+     font-weight: 600;
+     font-size: 48px;
+     color: var(--colorrose);
+ }
