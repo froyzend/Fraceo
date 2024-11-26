@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,19 +43,19 @@
       </div>
     </header>
     <main>
-         <section id="vocabulary">
-          <div class="container">
-            <h2 class="exercices-title">Exercices de Vocabulaire</h2>
+        <section id="vocabulary">
+    <div class="container">
+        <h2 class="exercices-title">Exercices de Vocabulaire</h2>
 
-        <!-- Question 1 (existing) -->
+        <!-- Question 1 -->
         <div class="exercise">
             <p><strong>1. Traduisez le mot "apple" en français :</strong></p>
             <input type="text" id="vocab-q1" placeholder="Votre réponse">
-            <button onclick="checkVocab(1, 'Pomme')">Vérifier</button>
+            <button class="check-vocab-btn" data-question="1" data-answer="pomme">Vérifier</button>
             <p id="result-vocab-q1"></p>
         </div>
 
-        <!-- Question 2 (existing) -->
+        <!-- Question 2 -->
         <div class="exercise">
             <label for="vocab-q2"><strong>2. Choisissez la traduction correcte pour "chair" :</strong></label>
             <select name="vocab-media" id="vocab-q2">
@@ -65,21 +65,21 @@
                 <option value="Lit">Lit</option>
                 <option value="Fenêtre">Fenêtre</option>
             </select>
-            <button onclick="checkVocab(2, 'Chaise')">Vérifier</button>
+            <button class="check-vocab-btn" data-question="2" data-answer="Chaise">Vérifier</button>
             <p id="result-vocab-q2"></p>
         </div>
 
-        <!-- Question 3: Color Translation -->
+        <!-- Question 3 -->
         <div class="exercise">
             <p><strong>3. Traduisez "blue" en français :</strong></p>
             <input type="text" id="vocab-q3" placeholder="Votre réponse">
-            <button onclick="checkVocab(3, 'Bleu')">Vérifier</button>
+            <button class="check-vocab-btn" data-question="3" data-answer="bleu">Vérifier</button>
             <p id="result-vocab-q3"></p>
         </div>
 
-        <!-- Question 4: Synonym Selection -->
+        <!-- Question 4 -->
         <div class="exercise">
-            <label for="id="vocab-q4"><strong>4. Quel est le synonyme de "grand" ?</strong></label>
+            <label for="vocab-q4"><strong>4. Quel est le synonyme de "grand" ?</strong></label>
             <select name="vocab-q4" id="vocab-q4">
                 <option value="">Sélectionnez...</option>
                 <option value="Petit">Petit</option>
@@ -87,32 +87,31 @@
                 <option value="Court">Court</option>
                 <option value="Étroit">Étroit</option>
             </select>
-            <button onclick="checkVocab(4, 'Énorme')">Vérifier</button>
+            <button class="check-vocab-btn" data-question="4" data-answer="Énorme">Vérifier</button>
             <p id="result-vocab-q4"></p>
         </div>
 
-        <!-- Question 5: Opposite Word -->
+        <!-- Question 5 -->
         <div class="exercise">
             <p><strong>5. Quel est l'antonyme de "chaud" ?</strong></p>
             <label><input type="radio" name="v5" value="Tiède"> Tiède</label><br>
             <label><input type="radio" name="v5" value="Froid"> Froid</label><br>
             <label><input type="radio" name="v5" value="Brûlant"> Brûlant</label><br>
             <label><input type="radio" name="v5" value="Chaleureux"> Chaleureux</label><br>
-            <button onclick="checkVocab(5, 'Froid')">Vérifier</button>
+            <button class="check-vocab-btn" data-question="5" data-answer="Froid">Vérifier</button>
             <p id="result-vocab-q5"></p>
         </div>
 
-        <!-- Question 6: Family Vocabulary -->
+        <!-- Question 6 -->
         <div class="exercise">
             <p><strong>6. Comment dit-on "brother" en français ?</strong></p>
             <input type="text" id="vocab-q6" placeholder="Votre réponse">
-            <button onclick="checkVocab(6, 'Frère')">Vérifier</button>
+            <button class="check-vocab-btn" data-question="6" data-answer="frère">Vérifier</button>
             <p id="result-vocab-q6"></p>
         </div>
 
-        <!-- Question 7: Food Vocabulary -->
+        <!-- Question 7 -->
         <div class="exercise">
-            
             <label for="vocab-q7"><strong>7. Choisissez le mot qui signifie "bread" :</strong></label>
             <select name="vocab-q7" id="vocab-q7">
                 <option value="">Sélectionnez...</option>
@@ -121,155 +120,144 @@
                 <option value="Gâteau">Gâteau</option>
                 <option value="Fromage">Fromage</option>
             </select>
-            
-            <button onclick="checkVocab(7, 'Pain')">Vérifier</button>
+            <button class="check-vocab-btn" data-question="7" data-answer="Pain">Vérifier</button>
             <p id="result-vocab-q7"></p>
         </div>
 
-        <!-- Question 8: Weather Vocabulary -->
+        <!-- Question 8 -->
         <div class="exercise">
             <p><strong>8. Traduisez "rain" en français :</strong></p>
             <input type="text" id="vocab-q8" placeholder="Votre réponse">
-            <button onclick="checkVocab(8, 'Pluie')">Vérifier</button>
+            <button class="check-vocab-btn" data-question="8" data-answer="pluie">Vérifier</button>
             <p id="result-vocab-q8"></p>
         </div>
 
-        <!-- Question 9: Animal Vocabulary -->
+        <!-- Question 9 -->
         <div class="exercise">
             <p><strong>9. Quel est le mot français pour "dog" ?</strong></p>
             <label><input type="radio" name="v9" value="Chat"> Chat</label><br>
             <label><input type="radio" name="v9" value="Chien"> Chien</label><br>
             <label><input type="radio" name="v9" value="Oiseau"> Oiseau</label><br>
             <label><input type="radio" name="v9" value="Poisson"> Poisson</label><br>
-            <button onclick="checkVocab(9, 'Chien')">Vérifier</button>
+            <button class="check-vocab-btn" data-question="9" data-answer="Chien">Vérifier</button>
             <p id="result-vocab-q9"></p>
         </div>
 
-        <!-- Question 10: Verb Translation -->
+        <!-- Question 10 -->
         <div class="exercise">
             <p><strong>10. Traduisez "to eat" en français :</strong></p>
             <input type="text" id="vocab-q10" placeholder="Votre réponse">
-            <button onclick="checkVocab(10, 'Manger')">Vérifier</button>
+            <button class="check-vocab-btn" data-question="10" data-answer="manger">Vérifier</button>
             <p id="result-vocab-q10"></p>
         </div>
-      </section>
+    </div>
+</section>
 
    <section id="grammar">
     <div class="container">
         <h2 class="exercices-title">Exercices de Grammaire</h2>
+<!-- Question 1 -->
+<div class="exercise">
+    <p><strong>1. Complétez la phrase : Je ... (être) étudiant.</strong></p>
+    <input type="text" id="grammar-q1" placeholder="Votre réponse">
+    <button class="check-grammar-btn" data-question="1" data-answer="suis">Vérifier</button>
+    <p id="result-grammar-q1"></p>
+</div>
 
-        <!-- Question 1 (existing) -->
-        <div class="exercise">
-            <p><strong>1. Complétez la phrase : Je ____ un livre.</strong></p>
-            <label><input type="radio" name="g1" value="lit"> lit</label><br>
-            <label><input type="radio" name="g1" value="lis"> lis</label><br>
-            <label><input type="radio" name="g1" value="lire"> lire</label><br>
-            <label><input type="radio" name="g1" value="lisez"> lisez</label><br>
-            <button onclick="checkGrammar(1, 'lis')">Vérifier</button>
-            <p id="result-grammar-q1"></p>
-        </div>
+<!-- Question 2 -->
+<div class="exercise">
+    <label for="grammar-q2"><strong>2. Complétez la phrase : Ils ... (avoir) une voiture.</strong></label>
+    <select name="grammar-q2" id="grammar-q2">
+        <option value="">Sélectionnez...</option>
+        <option value="ont">ont</option>
+        <option value="a">a</option>
+        <option value="sont">sont</option>
+        <option value="avons">avons</option>
+    </select>
+    <button class="check-grammar-btn" data-question="2" data-answer="ont">Vérifier</button>
+    <p id="result-grammar-q2"></p>
+</div>
 
-        <!-- Question 2 (existing) -->
-        <div class="exercise">
-            <p><strong>2. Choisissez l'article correct : ____ école.</strong></p>
-            <select id="grammar-q2">
-                <option value="">Sélectionnez...</option>
-                <option value="Le">Le</option>
-                <option value="La">La</option>
-                <option value="Un">Un</option>
-                <option value="L'">L'</option>
-            </select>
-            <button onclick="checkGrammar(2, 'L\'')">Vérifier</button>
-            <p id="result-grammar-q2"></p>
-        </div>
+<!-- Question 3 -->
+<div class="exercise">
+    <p><strong>3. Complétez la phrase : Elle ... (manger) une pomme.</strong></p>
+    <input type="text" id="grammar-q3" placeholder="Votre réponse">
+    <button class="check-grammar-btn" data-question="3" data-answer="mange">Vérifier</button>
+    <p id="result-grammar-q3"></p>
+</div>
 
-        <!-- Question 3: Verb Conjugation -->
-        <div class="exercise">
-            <p><strong>3. Conjuguez le verbe au présent : Nous (aller) ____ au cinéma.</strong></p>
-            <label><input type="radio" name="g3" value="allons"> allons</label><br>
-            <label><input type="radio" name="g3" value="vont"> vont</label><br>
-            <label><input type="radio" name="g3" value="va"> va</label><br>
-            <label><input type="radio" name="g3" value="allez"> allez</label><br>
-            <button onclick="checkGrammar(3, 'allons')">Vérifier</button>
-            <p id="result-grammar-q3"></p>
-        </div>
+<!-- Question 4 -->
+<div class="exercise">
+    <label for="grammar-q4"><strong>4. Choisissez la bonne forme du verbe : Nous ... (aller) au marché demain.</strong></label>
+    <select name="grammar-q4" id="grammar-q4">
+        <option value="">Sélectionnez...</option>
+        <option value="allons">allons</option>
+        <option value="vais">vais</option>
+        <option value="va">va</option>
+        <option value="allez">allez</option>
+    </select>
+    <button class="check-grammar-btn" data-question="4" data-answer="allons">Vérifier</button>
+    <p id="result-grammar-q4"></p>
+</div>
 
-        <!-- Question 4: Adjective Agreement -->
-        <div class="exercise">
-            <p><strong>4. Choisissez la forme correcte de l'adjectif : Une maison ____ (grand).</strong></p>
-            <label><input type="radio" name="g4" value="grand"> grand</label><br>
-            <label><input type="radio" name="g4" value="grande"> grande</label><br>
-            <label><input type="radio" name="g4" value="grands"> grands</label><br>
-            <label><input type="radio" name="g4" value="grandes"> grandes</label><br>
-            <button onclick="checkGrammar(4, 'grande')">Vérifier</button>
-            <p id="result-grammar-q4"></p>
-        </div>
+<!-- Question 5 -->
+<div class="exercise">
+    <p><strong>5. Complétez la phrase : Nous ... (être) contents de vous voir.</strong></p>
+    <label><input type="radio" name="g5" value="sont"> sont</label><br>
+    <label><input type="radio" name="g5" value="sommes"> sommes</label><br>
+    <label><input type="radio" name="g5" value="es"> es</label><br>
+    <label><input type="radio" name="g5" value="êtes"> êtes</label><br>
+    <button class="check-grammar-btn" data-question="5" data-answer="sommes">Vérifier</button>
+    <p id="result-grammar-q5"></p>
+</div>
 
-        <!-- Question 5: Preposition -->
-        <div class="exercise">
-            <p><strong>5. Complétez avec la préposition correcte : Je vais ____ Paris.</strong></p>
-            <label><input type="radio" name="g5" value="à"> à</label><br>
-            <label><input type="radio" name="g5" value="en"> en</label><br>
-            <label><input type="radio" name="g5" value="dans"> dans</label><br>
-            <label><input type="radio" name="g5" value="sur"> sur</label><br>
-            <button onclick="checkGrammar(5, 'à')">Vérifier</button>
-            <p id="result-grammar-q5"></p>
-        </div>
+<!-- Question 6 -->
+<div class="exercise">
+    <p><strong>6. Complétez la phrase : Il ... (faire) beau aujourd'hui.</strong></p>
+    <input type="text" id="grammar-q6" placeholder="Votre réponse">
+    <button class="check-grammar-btn" data-question="6" data-answer="fait">Vérifier</button>
+    <p id="result-grammar-q6"></p>
+</div>
 
-        <!-- Question 6: Pronoun -->
-        <div class="exercise">
-            <p><strong>6. Choisissez le pronom correct : ____ sommes étudiants.</strong></p>
-            <label><input type="radio" name="g6" value="Je"> Je</label><br>
-            <label><input type="radio" name="g6" value="Tu"> Tu</label><br>
-            <label><input type="radio" name="g6" value="Nous"> Nous</label><br>
-            <label><input type="radio" name="g6" value="Ils"> Ils</label><br>
-            <button onclick="checkGrammar(6, 'Nous')">Vérifier</button>
-            <p id="result-grammar-q6"></p>
-        </div>
+<!-- Question 7 -->
+<div class="exercise">
+    <label for="grammar-q7"><strong>7. Choisissez le bon mot : J'aime ... (jouer/jouer de) du piano.</strong></label>
+    <select name="grammar-q7" id="grammar-q7">
+        <option value="">Sélectionnez...</option>
+        <option value="jouer">jouer</option>
+        <option value="jouer de">jouer de</option>
+    </select>
+    <button class="check-grammar-btn" data-question="7" data-answer="jouer de">Vérifier</button>
+    <p id="result-grammar-q7"></p>
+</div>
 
-        <!-- Question 7: Verb Tense -->
-        <div class="exercise">
-            <p><strong>7. Mettez le verbe au passé composé : Hier, je ____ (finir) mes devoirs.</strong></p>
-            <label><input type="radio" name="g7" value="finis"> finis</label><br>
-            <label><input type="radio" name="g7" value="finissais"> finissais</label><br>
-            <label><input type="radio" name="g7" value="ai fini"> ai fini</label><br>
-            <label><input type="radio" name="g7" value="finirai"> finirai</label><br>
-            <button onclick="checkGrammar(7, 'ai fini')">Vérifier</button>
-            <p id="result-grammar-q7"></p>
-        </div>
+<!-- Question 8 -->
+<div class="exercise">
+    <p><strong>8. Complétez la phrase : Je ... (avoir) une réunion demain.</strong></p>
+    <input type="text" id="grammar-q8" placeholder="Votre réponse">
+    <button class="check-grammar-btn" data-question="8" data-answer="ai">Vérifier</button>
+    <p id="result-grammar-q8"></p>
+</div>
 
-        <!-- Question 8: Comparative -->
-        <div class="exercise">
-            <p><strong>8. Complétez la comparaison : Paris est ____ grande que Lyon.</strong></p>
-            <label><input type="radio" name="g8" value="plus"> plus</label><br>
-            <label><input type="radio" name="g8" value="moins"> moins</label><br>
-            <label><input type="radio" name="g8" value="aussi"> aussi</label><br>
-            <label><input type="radio" name="g8" value="si"> si</label><br>
-            <button onclick="checkGrammar(8, 'plus')">Vérifier</button>
-            <p id="result-grammar-q8"></p>
-        </div>
+<!-- Question 9 -->
+<div class="exercise">
+    <p><strong>9. Choisissez la bonne forme du verbe : Ils ... (être) en vacances.</strong></p>
+    <label><input type="radio" name="g9" value="sont"> sont</label><br>
+    <label><input type="radio" name="g9" value="est"> est</label><br>
+    <label><input type="radio" name="g9" value="suis"> suis</label><br>
+    <label><input type="radio" name="g9" value="êtes"> êtes</label><br>
+    <button class="check-grammar-btn" data-question="9" data-answer="sont">Vérifier</button>
+    <p id="result-grammar-q9"></p>
+</div>
 
-        <!-- Question 9: Negative Form -->
-        <div class="exercise">
-            <p><strong>9. Complétez avec la forme négative : Je ____ jamais de mensonges.</strong></p>
-            <label><input type="radio" name="g9" value="dis"> dis</label><br>
-            <label><input type="radio" name="g9" value="ne dis"> ne dis</label><br>
-            <label><input type="radio" name="g9" value="ne dis pas"> ne dis pas</label><br>
-            <label><input type="radio" name="g9" value="dis pas"> dis pas</label><br>
-            <button onclick="checkGrammar(9, 'ne dis pas')">Vérifier</button>
-            <p id="result-grammar-q9"></p>
-        </div>
+<!-- Question 10 -->
+<div class="exercise">
+    <p><strong>10. Complétez la phrase : Marie ... (parler) français et anglais.</strong></p>
+    <input type="text" id="grammar-q10" placeholder="Votre réponse">
+    <button class="check-grammar-btn" data-question="10" data-answer="parle">Vérifier</button>
+    <p id="result-grammar-q10"></p>
+</div>
 
-        <!-- Question 10: Modal Verb -->
-        <div class="exercise">
-            <p><strong>10. Choisissez le bon modal : Je ____ aller au cinéma.</strong></p>
-            <label><input type="radio" name="g10" value="doit"> doit</label><br>
-            <label><input type="radio" name="g10" value="peux"> peux</label><br>
-            <label><input type="radio" name="g10" value="veux"> veux</label><br>
-            <label><input type="radio" name="g10" value="dois"> dois</label><br>
-            <button onclick="checkGrammar(10, 'peux')">Vérifier</button>
-            <p id="result-grammar-q10"></p>
-        </div>
         </div>
     </section>
   </main>
@@ -310,51 +298,61 @@
       </div>
     </footer>
     <script>
-        function checkGrammar(questionNumber, correctAnswer) {
-            const resultElement = document.getElementById(`result-grammar-q${questionNumber}`);
-            let userAnswer;
+      function checkAnswer(questionNumber, correctAnswer, type) { // Added type parameter
+  const resultElementId = `result-${type}-q${questionNumber}`; // Dynamic ID
+  const resultElement = document.getElementById(resultElementId);
+  let userAnswer;
 
-            // Check the type of input for different question types
-            if (document.querySelector(`input[name="g${questionNumber}"]:checked`)) {
-                userAnswer = document.querySelector(`input[name="g${questionNumber}"]:checked`).value;
-            } else if (document.getElementById(`grammar-q${questionNumber}`)) {
-                userAnswer = document.getElementById(`grammar-q${questionNumber}`).value;
-            }
+  if (type === 'vocab') {
+    userAnswer = document.getElementById(`vocab-q${questionNumber}`).value; // Text input for vocab
+    if(userAnswer.trim() === ""){ // Handle empty answer
+        resultElement.textContent = "❌ Please enter an answer.";
+        resultElement.style.color = "red";
+        return;
+    }
+  } else if (type === 'grammar') {
+    const radio = document.querySelector(`input[name="g${questionNumber}"]:checked`);
+    const select = document.getElementById(`grammar-q${questionNumber}`);
+    userAnswer = radio ? radio.value : (select ? select.value : null); // Handle both radio and select
+    if(userAnswer === null){ //Handle no answer selected
+        resultElement.textContent = "❌ Please select an answer.";
+        resultElement.style.color = "red";
+        return;
+    }
+  }
 
-            if (userAnswer === correctAnswer) {
-                resultElement.innerHTML = "✅ Correct !";
-                resultElement.style.color = "green";
-            } else {
-                resultElement.innerHTML = "❌ Incorrect. Réessayez !";
-                resultElement.style.color = "red";
-            }
-        }
+  if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+    resultElement.textContent = "✅ Correct!";
+    resultElement.style.color = "green";
+  } else {
+    resultElement.textContent = "❌ Incorrect, please try again.";
+    resultElement.style.color = "red";
+  }
+}
+
+// Add event listeners for vocabulary questions
+const vocabButtons = document.querySelectorAll('.check-vocab-btn');
+vocabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const questionNumber = button.dataset.question;
+    const correctAnswer = button.dataset.answer;
+    checkAnswer(questionNumber, correctAnswer, 'vocab');
+  });
+});
+
+
+// Add event listeners for grammar questions
+const grammarButtons = document.querySelectorAll('.check-grammar-btn');
+grammarButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const questionNumber = button.dataset.question;
+    const correctAnswer = button.dataset.answer;
+    checkAnswer(questionNumber, correctAnswer, 'grammar');
+  });
+});
     </script>
-        <script>
-        function checkVocab(questionNumber, correctAnswer) {
-            const resultElement = document.getElementById(`result-vocab-q${questionNumber}`);
-            let userAnswer;
 
-            // Check the type of input for different question types
-            if (document.querySelector(`input[name="v${questionNumber}"]:checked`)) {
-                userAnswer = document.querySelector(`input[name="v${questionNumber}"]:checked`).value;
-            } else if (document.getElementById(`vocab-q${questionNumber}`)) {
-                userAnswer = document.getElementById(`vocab-q${questionNumber}`).value;
-            }
 
-            // Normalize answers by removing spaces and converting to title case
-            const normalizedUserAnswer = userAnswer ? userAnswer.trim().charAt(0).toUpperCase() + userAnswer.slice(1).toLowerCase() : '';
-            const normalizedCorrectAnswer = correctAnswer.trim();
-
-            if (normalizedUserAnswer === normalizedCorrectAnswer) {
-                resultElement.innerHTML = "✅ Correct !";
-                resultElement.style.color = "green";
-            } else {
-                resultElement.innerHTML = `❌ Incorrect. La bonne réponse était "${normalizedCorrectAnswer}".`;
-                resultElement.style.color = "red";
-            }
-        }
-    </script>
     
   </body>
 </html>
