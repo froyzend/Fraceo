@@ -41,81 +41,307 @@
       </div>
     </header>
    <main>
-    <section class="vocab-section">
-      <div class="container">
-        <h1>Vocabulaire Français</h1>
-        <p>Apprenez de nouveaux mots chaque jour !</p>
+   <section class="vocab-section padding">
+  <div class="container">
+    <h1 class="title">Vocabulaire Français</h1>
+    <p class="subtitle">Apprenez de nouveaux mots chaque jour et enrichissez votre vocabulaire avec des exemples, des médias et des quiz interactifs !</p>
 
-        <div class="vocab-media">
-          <img
-            src="https://images.unsplash.com/photo-1593642532009-6ba71e22f468"
-            alt="Étudier le vocabulaire"
-            loading="lazy"
-            width="360"
-          />
-          
-            <iframe width="450" height="400" src="https://www.youtube.com/embed/7LJE0axGntU" title="Apprendre 160 mots en français. apprendre le vocabulaire français facilement avec des images." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          
-        </div>
+    <!-- Мультимедиа -->
+    <div class="media-container">
+      <img
+        class="media-image"
+        src="https://images.unsplash.com/photo-1593642532009-6ba71e22f468"
+        alt="Étudier le vocabulaire"
+        loading="lazy"
+        width="360"
+      />
+      <iframe
+        class="media-video"
+        width="450"
+        height="400"
+        src="https://www.youtube.com/embed/7LJE0axGntU"
+        title="Apprendre 160 mots en français"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
 
-        <h2 class="section-title">1. Les Couleurs</h2>
-        <p>Les mots pour décrire les couleurs.</p>
-        <div class="example-box">
-          <h4>Exemples:</h4>
-          <ul class="rule-list">
-            <li>Rouge - Red</li>
-            <li>Bleu - Blue</li>
-            <li>Vert - Green</li>
-            <li>Jaune - Yellow</li>
-            <li>Noir - Black</li>
-            <li>Blanc - White</li>
-          </ul>
-          <audio controls>
-            <source
-              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-              type="audio/mp3"
-            />
-            Votre navigateur ne prend pas en charge la lecture d'audios.
-          </audio>
-        </div>
-
-        <h2 class="section-title">2. Les Animaux</h2>
-        <p>Les mots pour décrire les animaux communs.</p>
-        <div class="example-box">
-          <h4>Exemples:</h4>
-          <ul class="rule-list">
-            <li>Chat - Cat</li>
-            <li>Chien - Dog</li>
-            <li>Oiseau - Bird</li>
-            <li>Poisson - Fish</li>
-            <li>Lapin - Rabbit</li>
-            <li>Cheval - Horse</li>
-          </ul>
-        </div>
-
-        <h2 class="section-title">3. La Nourriture</h2>
-        <p>Les mots pour décrire la nourriture et les boissons.</p>
-        <div class="example-box">
-          <h4>Exemples:</h4>
-          <ul class="rule-list">
-            <li>Pomme - Apple</li>
-            <li>Pain - Bread</li>
-            <li>Lait - Milk</li>
-            <li>Fromage - Cheese</li>
-            <li>Viande - Meat</li>
-            <li>Jus - Juice</li>
-          </ul>
-        </div>
+    <!-- Темы -->
+    <div class="themes-container">
+      <!-- Тема: Les Couleurs et Les Formes -->
+      <div class="theme">
+        <h2 class="theme-title">1. Les Couleurs et Les Formes</h2>
+        <p class="theme-description">Les mots pour décrire les couleurs et les formes.</p>
+        <h4>Les Couleurs:</h4>
+        <ul class="theme-list">
+          <li>Rouge - Red</li>
+          <li>Bleu - Blue</li>
+          <li>Vert - Green</li>
+          <li>Jaune - Yellow</li>
+          <li>Noir - Black</li>
+          <li>Blanc - White</li>
+        </ul>
+        <h4>Les Formes:</h4>
+        <ul class="theme-list">
+          <li>Cercle - Circle</li>
+          <li>Carré - Square</li>
+          <li>Triangle - Triangle</li>
+          <li>Rectangle - Rectangle</li>
+          <li>Ovale - Oval</li>
+        </ul>
       </div>
-    </section>
 
-    <section class="interactive-section">
-      <div class="container">
-        <h2 class="section-title">Quiz de Vocabulaire</h2>
-        <p>Mettez vos connaissances à l'épreuve !</p>
-        <button class="quiz-button">Commencer le Quiz</button>
+      <!-- Тема: Les Animaux -->
+      <div class="theme">
+        <h2 class="theme-title">2. Les Animaux</h2>
+        <p class="theme-description">Les mots pour décrire les animaux communs.</p>
+        <ul class="theme-list">
+          <li>Chat - Cat</li>
+          <li>Chien - Dog</li>
+          <li>Oiseau - Bird</li>
+          <li>Poisson - Fish</li>
+          <li>Lapin - Rabbit</li>
+          <li>Cheval - Horse</li>
+        </ul>
       </div>
+
+      <div class="theme">
+        <h2 class="theme-title">3. Les Métiers</h2>
+        <p class="theme-description">Les noms des professions courantes.</p>
+        <ul class="theme-list">
+          <li>Professeur - Teacher</li>
+          <li>Médecin - Doctor</li>
+          <li>Ingénieur - Engineer</li>
+          <li>Boulanger - Baker</li>
+          <li>Écrivain - Writer</li>
+          <li>Artiste - Artist</li>
+        </ul>
+      </div>
+
+      <div class="theme">
+        <h2 class="theme-title">4. Les Vêtements</h2>
+        <p class="theme-description">Les mots pour décrire les vêtements et accessoires.</p>
+        <ul class="theme-list">
+          <li>Robe - Dress</li>
+          <li>Pantalon - Pants</li>
+          <li>Chapeau - Hat</li>
+          <li>Chaussures - Shoes</li>
+          <li>Manteau - Coat</li>
+          <li>Écharpe - Scarf</li>
+        </ul>
+      </div>
+
+      <div class="theme">
+        <h2 class="theme-title">5. Les Transports</h2>
+        <p class="theme-description">Les mots pour parler des moyens de transport.</p>
+        <ul class="theme-list">
+          <li>Voiture - Car</li>
+          <li>Train - Train</li>
+          <li>Bus - Bus</li>
+          <li>Bateau - Boat</li>
+          <li>Avion - Airplane</li>
+          <li>Vélo - Bicycle</li>
+        </ul>
+      </div>
+
+      <div class="theme">
+        <h2 class="theme-title">6. Les Jours de la Semaine 
+          <br> Les Saisons
+          <br>Les Mois de l'Année</h2>
+        <p class="theme-description">Les jours de la semaine et les mois de l'année en français.</p>
+        <h4>Les Jours de la Semaine:</h4>
+        <ul class="theme-list">
+          <li>Lundi - Monday</li>
+          <li>Mardi - Tuesday</li>
+          <li>Mercredi - Wednesday</li>
+          <li>Jeudi - Thursday</li>
+          <li>Vendredi - Friday</li>
+          <li>Samedi - Saturday</li>
+          <li>Dimanche - Sunday</li>
+        </ul>
+        <h4 class="theme-description">Les mots pour décrire les saisons de l'année.</h4> 
+        <ul class="theme-list">
+          <li>Printemps - Spring</li>
+          <li>Été - Summer</li>
+          <li>Automne - Autumn</li>
+          <li>Hiver - Winter</li>
+        </ul>
+        <h4>Les Mois de l'Année:</h4>
+        <ul class="theme-list">
+          <li>Janvier - January</li>
+          <li>Février - February</li>
+          <li>Mars - March</li>
+          <li>Avril - April</li>
+          <li>Mai - May</li>
+          <li>Juin - June</li>
+          <li>Juillet - July</li>
+          <li>Août - August</li>
+          <li>Septembre - September</li>
+          <li>Octobre - October</li>
+          <li>Novembre - November</li>
+          <li>Décembre - December</li>
+        </ul>
+      </div>
+
+      <!-- Тема: La Famille et Les Relations -->
+      <div class="theme">
+        <h2 class="theme-title">7. La Famille et Les Relations</h2>
+        <p class="theme-description">Les membres de la famille et des relations sociales.</p>
+        <ul class="theme-list">
+          <li>Père - Father</li>
+          <li>Mère - Mother</li>
+          <li>Frère - Brother</li>
+          <li>Sœur - Sister</li>
+          <li>Grand-père - Grandfather</li>
+          <li>Grand-mère - Grandmother</li>
+          <li>Oncle - Uncle</li>
+          <li>Tante - Aunt</li>
+          <li>Cousin - Cousin (Male)</li>
+          <li>Cousine - Cousin (Female)</li>
+          <li>Ami - Friend</li>
+        </ul>
+      </div>
+
+      <!-- Тема: Le Corps Humain -->
+      <div class="theme">
+        <h2 class="theme-title">8. Le Corps Humain</h2>
+        <p class="theme-description">Les parties du corps humain.</p>
+        <ul class="theme-list">
+          <li>Tête - Head</li>
+          <li>Œil - Eye</li>
+          <li>Oreille - Ear</li>
+          <li>Bouche - Mouth</li>
+          <li>Nez - Nose</li>
+          <li>Main - Hand</li>
+          <li>Pied - Foot</li>
+          <li>Bras - Arm</li>
+          <li>Jambe - Leg</li>
+          <li>Cœur - Heart</li>
+        </ul>
+      </div>
+
+      <!-- Тема: Les Objets Quotidiens -->
+      <div class="theme">
+        <h2 class="theme-title">9. Les Objets Quotidiens</h2>
+        <p class="theme-description">Les objets du quotidien et leur usage.</p>
+        <ul class="theme-list">
+          <li>Téléphone - Phone</li>
+          <li>Ordinateur - Computer</li>
+          <li>Cahier - Notebook</li>
+          <li>Stylo - Pen</li>
+          <li>Clé - Key</li>
+          <li>Sac - Bag</li>
+          <li>Montre - Watch</li>
+          <li>Table - Table</li>
+          <li>Chaise - Chair</li>
+          <li>Lampe - Lamp</li>
+        </ul>
+      </div>
+      
+
+      <!-- Тема: La Nourriture et Les Boissons -->
+      <div class="theme">
+        <h2 class="theme-title">10. La Nourriture et Les Boissons</h2>
+        <p class="theme-description">Les mots pour décrire la nourriture et les boissons.</p>
+        <ul class="theme-list">
+          <li>Pomme - Apple</li>
+          <li>Pain - Bread</li>
+          <li>Lait - Milk</li>
+          <li>Fromage - Cheese</li>
+          <li>Viande - Meat</li>
+          <li>Jus - Juice</li>
+          <li>Eau - Water</li>
+          <li>Café - Coffee</li>
+          <li>Thé - Tea</li>
+        </ul>
+      </div>
+
+      <!-- Тема: Les Adjectifs de Qualité -->
+      <div class="theme">
+        <h2 class="theme-title">11. Les Adjectifs de Qualité</h2>
+        <p class="theme-description">Les adjectifs pour décrire la qualité des objets et des personnes.</p>
+        <ul class="theme-list">
+          <li>Grand - Big</li>
+          <li>Petit - Small</li>
+          <li>Beau/Belle - Beautiful</li>
+          <li>Vieux/Vieille - Old</li>
+          <li>Jeune - Young</li>
+          <li>Fort - Strong</li>
+          <li>Sympathique - Friendly</li>
+          <li>Intéressant - Interesting</li>
+        </ul>
+      </div>
+
+      <!-- Тема: Les Verbes Communs -->
+      <div class="theme">
+        <h2 class="theme-title">12. Les Verbes Communs</h2>
+        <p class="theme-description">Les verbes courants utilisés dans la vie quotidienne.</p>
+        <ul class="theme-list">
+          <li>Être - To be</li>
+          <li>Avoir - To have</li>
+          <li>Faire - To do, to make</li>
+          <li>Aller - To go</li>
+          <li>Manger - To eat</li>
+          <li>Boire - To drink</li>
+          <li>Lire - To read</li>
+          <li>Écrire - To write</li>
+        </ul>
+      </div>
+
+      <!-- Тема: Les Prépositions -->
+      <div class="theme">
+        <h2 class="theme-title">13. Les Prépositions</h2>
+        <p class="theme-description">Les prépositions courantes en français.</p>
+        <ul class="theme-list">
+          <li>À - At, to</li>
+          <li>Dans - In</li>
+          <li>Sur - On</li>
+          <li>Sous - Under</li>
+          <li>Devant - In front of</li>
+          <li>Derrière - Behind</li>
+        </ul>
+      </div>
+
+      <!-- Тема: Les Adjectifs Possessifs -->
+      <div class="theme">
+        <h2 class="theme-title">14. Les Adjectifs Possessifs</h2>
+        <p class="theme-description">Les adjectifs possessifs pour montrer la possession.</p>
+        <ul class="theme-list">
+          <li>Mon - My (masculine)</li>
+          <li>Ma - My (feminine)</li>
+          <li>Mes - My (plural)</li>
+          <li>Ton - Your (informal, masculine)</li>
+          <li>Ta - Your (informal, feminine)</li>
+          <li>Ses - His/Her</li>
+        </ul>
+      </div>
+
+      <!-- Тема: Les Emotions -->
+      <div class="theme">
+        <h2 class="theme-title">15. Les Emotions</h2>
+        <p class="theme-description">Les mots pour décrire les émotions et les sentiments.</p>
+        <ul class="theme-list">
+          <li>Heureux - Happy</li>
+          <li>Triste - Sad</li>
+          <li>En colère - Angry</li>
+          <li>Excité - Excited</li>
+          <li>Fatigué - Tired</li>
+          <li>Surpris - Surprised</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Квиз -->
+    <section class="quiz-section">
+      <h2 class="quiz-title">Quiz de Vocabulaire</h2>
+      <p class="quiz-description">Testez vos connaissances et progressez !</p>
+      <button class="quiz-button">Commencer le Quiz</button>
     </section>
+  </div>
+</section>
+
   </main>
     <footer class="footer">
       <div class="container footer-container">
@@ -150,7 +376,9 @@
           <p class="footer-copyright">
             © 2024 Cours de français A1. Tous droits réservés.
           </p>
-        
+       <button id="scrollToTopBtn" class="scroll-btn" title="Go to top">
+  <span class="arrowScroll"></span>
+</button>
       </div>
     </footer>
   </body>

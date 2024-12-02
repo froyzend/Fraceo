@@ -1,4 +1,4 @@
-const openModalButton = document.querySelector(".open-menu-button");
+/*const openModalButton = document.querySelector(".open-menu-button");
 const modal = document.querySelector(".menu-header");
 const closeModalButton = document.querySelector(".close-button");
 
@@ -15,3 +15,8 @@ modal.addEventListener("click", (e) => {
     modal.style.display = "none";
   }
 });
+const menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", () => {
+  menuButton.classList.toggle("open");
+});
+*/
