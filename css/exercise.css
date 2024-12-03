@@ -1,153 +1,129 @@
- /*body {
-     font-family: Arial, sans-serif;
- }
-
- .exercise {
-     border-bottom: 1px solid #ddd;
-     padding: 24px 32px;
- }
-
- .exercise p {
-     margin-bottom: 10px;
- }
-
- button {
-     margin-top: 10px;
- }
-
- .exercices-title {
-     font-family: var(--second-family);
-     font-weight: 600;
-     font-size: 48px;
-     color: var(--colorrose);
- }*/
+h2.exercices-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 48px;
+    color: #e91e63;
+    animation: fadeIn 1s ease-out;
+}
 
 
+.exercise {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
+.exercise:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-5px);
+}
 
- h2.exercices-title {
-     text-align: center;
-     margin-bottom: 40px;
-     font-family: var(--second-family);
-     font-weight: 600;
-     font-size: 48px;
-     color: #e91e63;
-     animation: fadeIn 1s ease-out;
- }
+.exercise strong {
+    font-size: 1.2rem;
+    color: #333;
+}
 
+.exercise p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
- .exercise {
-     background-color: #f8f8f8;
-     padding: 20px;
-     border-radius: 10px;
-     margin-bottom: 20px;
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-     transition: all 0.3s ease;
- }
+input[type="text"],
+select {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
 
- .exercise:hover {
-     background-color: #f1f1f1;
-     transform: translateY(-5px);
- }
-
- .exercise strong {
-     font-size: 1.2rem;
-     color: #333;
- }
-
- .exercise p {
-     font-size: 18px;
-     margin-bottom: 10px;
- }
-
- input[type="text"],
- select {
-     padding: 10px;
-     width: 100%;
-     max-width: 300px;
-     margin: 10px 0;
-     border: 1px solid #ccc;
-     border-radius: 5px;
-     font-size: 1rem;
-     transition: border-color 0.3s ease;
- }
-
+/*
  input[type="text"]:focus,
  select:focus {
      border-color: #e91e63;
- }
+ }*/
 
 
- button {
-     background-color: #e91e63;
-     color: white;
-     padding: 10px 20px;
-     border: none;
-     border-radius: 5px;
-     font-size: 1rem;
-     cursor: pointer;
-     transition: background-color 0.3s ease, transform 0.2s ease;
- }
+.check-vocab-btn,
+.check-grammar-btn {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
- button:hover {
-     background-color: #c2185b;
-     transform: scale(1.05);
- }
+.check-vocab-btn:hover,
+.check-grammar-btn:hover {
+    background-color: #c2185b;
+    transform: scale(1.05);
+}
 
- p[id^="result"] {
-     font-size: 20px;
-     margin-top: 10px;
-     color: #27ae60;
- }
+p[id^="result"] {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #27ae60;
+}
 
- p[id^="result"]:not(.correct) {
-     color: #e74c3c;
+p[id^="result"]:not(.correct) {
+    color: #e74c3c;
 
- }
+}
 
- @keyframes fadeIn {
-     from {
-         opacity: 0;
-     }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
-     to {
-         opacity: 1;
-     }
- }
+    to {
+        opacity: 1;
+    }
+}
 
 
- #vocabulary,
- #grammar {
-     margin-top: 40px;
- }
+#vocabulary,
+#grammar {
+    margin-top: 40px;
+}
 
- .exercise input[type="radio"],
- .exercise label {
-     margin-right: 10px;
-     margin-bottom: 10px;
- }
+.exercise input[type="radio"],
+.exercise label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 
- .exercise label {
-     font-size: 1rem;
-     color: #333;
-     margin-bottom: 10px;
- }
+.exercise label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
 
- /* Увеличенные области для выбора */
- select,
- input[type="text"] {
-     font-size: 1.1rem;
-     padding: 12px;
- }
+/* Увеличенные области для выбора */
+select,
+input[type="text"] {
+    font-size: 1.1rem;
+    padding: 12px;
+}
 
- input[type="radio"] {
-     width: 20px;
-     height: 20px;
-     margin-right: 10px;
-     margin-bottom: 10px;
- }
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 
- button:focus {
-     outline: none;
-     box-shadow: 0 0 5px #e91e63;
- }
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #e91e63;
+}

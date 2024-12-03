@@ -5,166 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cours</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <style>
-      /* Базовые стили 
-      body {
-        font-family: "Arial", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f9f9;
-        color: #333;
-      }
-
-      section {
-        background-color: #007aff;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-
-      section h1 {
-        margin: 0;
-        font-size: 24px;
-      }
-
-      section p {
-        margin: 5px 0 0;
-        font-size: 16px;
-      }
-      /*
-      .search-container {
-        margin: 20px auto;
-        width: 90%;
-        max-width: 600px;
-        position: relative;
-      }
-
-      .search-container input {
-        width: 100%;
-        padding: 10px 15px;
-        border: 1px solid #ccc;
-        border-radius: 25px;
-        font-size: 16px;
-      }
-
-      .search-container i {
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        transform: translateY(-50%);
-        font-size: 18px;
-        color: #aaa;
-      }
-
-      .content-container {
-        display: flex;
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        gap: 20px;
-      }
-
-      /* Левый блок (фильтры) 
-      .filters {
-        width: 25%;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      .filters h2 {
-        font-size: 18px;
-        margin-bottom: 15px;
-        color: #007aff;
-      }
-
-      .filters label {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 14px;
-        cursor: pointer;
-      }
-
-      .filters input[type="checkbox"] {
-        margin-right: 10px;
-      }
-
-      .filters .section {
-        margin-bottom: 20px;
-      }
-
-      /* Правый блок (контент) 
-            .content {
-        width: 75%;
-      }
-
-      .content h2 {
-        font-size: 22px;
-        margin-bottom: 15px;
-        color: #007aff;
-      }
-
-      .content .card {
-        background-color: #fff;
-        padding: 15px 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin-bottom: 15px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-
-      .content .card:hover {
-        background-color: #f0f8ff;
-      }
-
-      .content .card-title {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 5px;
-      }
-
-      .content .card-description {
-        font-size: 14px;
-        color: #555;
-      }
-
-      /* Блок "Плюс помощи" 
-      .help-section {
-        margin-top: 30px;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      .help-section h3 {
-        font-size: 18px;
-        color: #007aff;
-        margin-bottom: 15px;
-      }
-
-      .help-section ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .help-section ul li {
-        margin-bottom: 10px;
-      }
-
-      .help-section ul li a {
-        color: #007aff;
-        text-decoration: none;
-        font-size: 14px;
-      }
-
-      .help-section ul li a:hover {
-        text-decoration: underline;
-      }*/
-    </style>
+   
   </head>
   <body>
     <header class="header">
@@ -228,23 +69,31 @@
         </div>
       </div>
     </header>
-    <main>
-  <section>
-    <h1>Vocabulaire</h1>
-    <p>
+    <main class="main-vocabulaire">
+  <section class="vocabulaire-header">
+    <div class="container">
+    <h1 class="vocabulaire-title">Vocabulaire 
+      <svg width="50" height="50">
+        <use href="../img/symbol-defs.svg#icon-study"></use>
+      </svg>
+    </h1>
+    <p class="vocabulaire-description">
       "La famille", "les aliments" ou "les parties du corps" : pour apprendre
       de nouveaux mots et expressions de la vie quotidienne.
     </p>
-  </section>
   
-  <section class="search-container">
-    <input type="text" id="searchInput" placeholder="Rechercher..." />
-    <i class="search-icon">🔍</i>
-  </section>
-
+  <div class="search-container">
+    <input class="search-input" type="text" id="searchInput" placeholder="Rechercher..." />
+    <svg class="search-icon" width="24" height="24">
+      <use href="../img/symbol-defs.svg#icon-search"></use>
+    </svg>
+  </div>
+  </div>
+</section>
   <section class="content-container">
+    <div class="container flex-containerVocabulaire">
     <aside class="filters">
-      <h2>Filtres</h2>
+      <h2 class="filters-title">Filtres de Sujet</h2>
       <div class="filter-buttons">
         <button class="filter-btn" data-category="all">All</button>
         <button class="filter-btn" data-category="vêtements">Les Vêtements</button>
@@ -265,11 +114,13 @@
       </div>
     </aside>
 
-    <section class="content">
+    <div class="content-vocabulaire">
       <div id="contentCards"></div>
       <div id="resultsCount"></div>
-    </section>
+    </div>
+    </div>
   </section>
+  
 </main>
 
      <footer class="footer">
@@ -305,11 +156,16 @@
           <p class="footer-copyright">
             © 2024 Cours de français A1. Tous droits réservés.
           </p>
-        <button id="scrollToTopBtn" class="scroll-btn" title="Go to top">
-  <span class="arrowScroll"></span>
+          <button id="scrollToTopBtn" class="scroll-btn" title="Go to top">
+        <span class="arrowScroll">
+          <svg width="24" height="24" fill="#fff">
+            <use href="../img/symbol-defs.svg#icon-arrow-up">
+            </use>
+          </svg>
+        </span>
 </button>
       </div>
     </footer>
-    <script src="./script.js"></script>
+    <script type="module" src="../main.js"></script>
   </body>
 </html>

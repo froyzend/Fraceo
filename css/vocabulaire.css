@@ -185,85 +185,162 @@ body {
 .quiz-button:hover {
     background: #2980b9;
 }*/
-
-/* Основные стили */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.vocabulaire-title {
+    font-family: var(--font4);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #f8f4f4;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px #1a1a1a;
 }
 
-main {
+.vocabulaire-description {
+    width: 60%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2e2d2d;
+}
+
+.main-vocabulaire {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 
-section {
+.vocabulaire-header {
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
     margin-bottom: 20px;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
 }
 
-/* Стили для поисковой строки */
+.vocabulaire-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://apprendre.tv5monde.com/sites/apprendre.tv5monde.com/files/styles/banniere_1600/public/images/illustration-competence-banniere-vocabulaire-1600_0.png?h=799bb9da&itok=4xh8L7ah");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    z-index: -1;
+}
+
 .search-container {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: left;
+    align-items: center;
 }
 
-#searchInput {
+.search-input {
     padding: 10px;
-    width: 300px;
+    min-width: 300px;
+    border: none;
+    border-radius: 20px;
     margin-right: 10px;
+    transition: border 0.3s ease;
+}
+
+.search-input:focus,
+.search-input:hover {
+    border-color: #f2f3f7;
+    outline: none;
 }
 
 .search-icon {
-    font-size: 20px;
+    margin-left: -50px;
 }
 
-/* Контейнер для фильтров и контента */
 .content-container {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
 }
 
-/* Стили для фильтров */
+.flex-containerVocabulaire {
+    display: flex;
+}
+
+.filters-title {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #08327b, #096626);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
 .filters {
+    flex: 0 0 25%;
+    min-width: 25%;
+    /*
     width: 250px;
     padding: 20px;
     background-color: #f4f4f4;
-    border-radius: 8px;
+    border-radius: 8px;*/
 }
 
 .filter-buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .filter-btn {
-    padding: 10px;
-    background-color: #ff4081;
-    color: white;
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #312e2e;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     text-align: left;
+    font-weight: bold;
+    position: relative;
+    padding-left: 27px;
+    display: block;
+    transition: border 0.3s ease-in-out,
+        transform 0.3s ease-in-out, background-color 0.3s ease;
+
+}
+
+.filter-btn::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    border-radius: 100%;
+    background: #119884;
+    position: absolute;
+    top: calc(50% - 6px);
+    left: 5px;
 }
 
 .filter-btn:hover {
-    background-color: #f50057;
+    background-color: #119884;
+    border: 1px solid #119884;
+    transform: scale(1.1);
 }
 
-/* Стили для контента */
-.content {
+
+.content-vocabulaire {
     flex-grow: 1;
+    /*This allows content-vocabulaire to take up remaining space*/
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
-    width: calc(100% - 270px);
-    /* Учитываем ширину фильтров */
+    min-width: 0;
+    /*Added to avoid min-width issues*/
+    flex: 0 0 75%;
+    max-width: 75%;
 }
 
 #contentCards {
@@ -283,19 +360,23 @@ section {
 .card-title {
     font-size: 18px;
     margin-bottom: 10px;
+    font-size: 20px;
+    color: #1a365d;
+    font-weight: 600;
 }
 
 .card-description {
     font-size: 14px;
     margin-bottom: 10px;
+    font-family: var(--font4);
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #403c3c;
 }
 
 #resultsCount {
     margin-top: 20px;
     font-size: 16px;
     color: #555;
-}
-
-li {
-    color: var(--rose2);
 }

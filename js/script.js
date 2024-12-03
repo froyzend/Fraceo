@@ -184,9 +184,8 @@ const vocabularyCards = [
   },
 ];
 function filterByCategory(category) {
-  const cards = document.querySelectorAll(".card");
+  const cards = document.querySelectorAll(".cardVocab");
   let visibleCount = 0;
-  console.log(`Filtering by category: ${category}`);
   cards.forEach((card) => {
     if (category === "all" || card.dataset.category === category) {
       card.style.display = "block";
@@ -195,14 +194,12 @@ function filterByCategory(category) {
       card.style.display = "none";
     }
   });
-
-  resultsCount.textContent = `${visibleCount} aides`;
+  updateResultsCount();
 }
 
 function searchCards(query) {
-  const cards = document.querySelectorAll(".card");
+  const cards = document.querySelectorAll(".cardVocab");
   let visibleCount = 0;
-
   cards.forEach((card) => {
     const title = card.querySelector(".card-title").textContent.toLowerCase();
     const description = card
@@ -218,22 +215,20 @@ function searchCards(query) {
       card.style.display = "none";
     }
   });
-
-  resultsCount.textContent = `${visibleCount} aides`;
+  updateResultsCount();
 }
 
 function generateCards(vocabularyCards) {
   contentCards.innerHTML = "";
-  console.log("Generating cards...");
   vocabularyCards.forEach((data) => {
-    const card = createCard(data);
-    contentCards.appendChild(card);
+    contentCards.appendChild(createCard(data));
   });
+  updateResultsCount();
 }
 
 function createCard(data) {
   const card = document.createElement("div");
-  card.classList.add("card");
+  card.classList.add("cardVocab");
   card.dataset.category = data.category;
 
   const title = document.createElement("h3");
@@ -242,25 +237,13 @@ function createCard(data) {
 
   const description = document.createElement("p");
   description.classList.add("card-description");
-
-  const frenchWordRegex = /([A-Za-zÀ-ÿ]+) -/g;
-
-  description.innerHTML = data.description.replace(
-    frenchWordRegex,
-    "<strong>$1</strong> -"
-  );
+  description.textContent = data.description;
 
   const contentList = document.createElement("ul");
   if (Array.isArray(data.content)) {
     data.content.forEach((item) => {
       const listItem = document.createElement("li");
-
-      // Применяем замену для каждого элемента списка
-      listItem.innerHTML = item.replace(
-        frenchWordRegex,
-        "<strong>$1</strong> -"
-      );
-
+      listItem.textContent = item;
       contentList.appendChild(listItem);
     });
   } else {
@@ -268,16 +251,9 @@ function createCard(data) {
       const subCategory = document.createElement("h4");
       subCategory.textContent = key;
       contentList.appendChild(subCategory);
-
       data.content[key].forEach((item) => {
         const listItem = document.createElement("li");
-
-        // Применяем замену для каждого элемента подкатегории
-        listItem.innerHTML = item.replace(
-          frenchWordRegex,
-          "<strong>$1</strong> -"
-        );
-
+        listItem.textContent = item;
         contentList.appendChild(listItem);
       });
     }
@@ -286,8 +262,14 @@ function createCard(data) {
   card.appendChild(title);
   card.appendChild(description);
   card.appendChild(contentList);
-
   return card;
+}
+
+function updateResultsCount() {
+  const visibleCards = document.querySelectorAll(
+    '.cardVocab:not([style*="display: none"])'
+  );
+  resultsCount.textContent = `${visibleCards.length} aides`;
 }
 
 filterButtons.forEach((button) => {
@@ -299,9 +281,12 @@ filterButtons.forEach((button) => {
 
 searchInput.addEventListener("input", (event) => {
   const query = event.target.value;
-  console.log(`Searching for: ${query}`);
   searchCards(query);
 });
 
-generateCards(vocabularyCards);
-filterByCategory("all");
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("load", function () {
+    generateCards(vocabularyCards);
+    filterByCategory("all");
+  });
+});

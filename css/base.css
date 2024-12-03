@@ -133,7 +133,7 @@ p {
     right: 20px;
     background-color: #e91e63;
     border: none;
-    padding: 10px 18px;
+    padding: 15px 20px;
     border-radius: 50%;
     cursor: pointer;
     display: none;
@@ -146,19 +146,20 @@ p {
     transform: scale(1.1);
 }
 
+/*
 .arrowScroll::before {
     content: "↑";
     font-size: 32px;
     color: white;
     text-align: center;
     display: block;
-    transition: transform 0.3s ease;
+    
 }
 
 .scroll-btn:hover .arrowScroll::before {
     transform: translateY(-3px);
 }
-
+*/
 
 @media (max-width: 768px) {
     .scroll-btn {
