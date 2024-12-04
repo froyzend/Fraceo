@@ -146,20 +146,7 @@ p {
     transform: scale(1.1);
 }
 
-/*
-.arrowScroll::before {
-    content: "↑";
-    font-size: 32px;
-    color: white;
-    text-align: center;
-    display: block;
-    
-}
 
-.scroll-btn:hover .arrowScroll::before {
-    transform: translateY(-3px);
-}
-*/
 
 @media (max-width: 768px) {
     .scroll-btn {

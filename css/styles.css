@@ -11,3 +11,7 @@
 @import './exercise.css';
 @import './resource.css';
 @import './faq.css';
+
+html {
+    scroll-behavior: smooth;
+}

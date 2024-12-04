@@ -1,5 +1,3 @@
-/* =============== Общие стили =============== */
-
 .body-grammaire {
     font-family: var(--font-family);
 }
@@ -14,7 +12,7 @@
     font-style: italic;
 }
 
-/* ==================== Шрифты ==================== */
+/* ==================== Font ==================== */
 
 .grammaire-title {
     font-family: var(--second-family);
@@ -39,10 +37,16 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
+    margin-bottom: 10px;
     color: #2f2a2a;
 }
 
-/* ==================== Секции =============== */
+.grammaire-text2:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+/* ==================== Sections =============== */
 
 .grammar-section {
     background: white;
@@ -66,18 +70,12 @@
     margin-bottom: 20px;
 }
 
-/* ==================== Примеры =============== */
+/* ====================Examples=============== */
 
 .example-box {
     border-radius: 6px;
 }
 
-.example-list {
-    display: flex;
-    padding: 20px;
-    gap: 10px;
-    flex-direction: column;
-}
 
 .example {
     color: #7e414b;
@@ -89,12 +87,13 @@
     display: none;
 }
 
-/* ==================== Таблицы =============== */
-
+/* ====================Tables=============== */
 .conjugation-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 15px;
+    overflow-x: auto;
+    display: block;
 }
 
 .conjugation-table th,
@@ -113,7 +112,23 @@
     background: var(--pink-lightest);
 }
 
-/* ==================== Сетки и сеточные списки =============== */
+@media (max-width: 375px) {
+
+    .conjugation-table th,
+    .conjugation-table td {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .conjugation-table {
+        font-size: 0.9rem;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+/* ==================== Lists =============== */
 
 .grid-list {
     display: grid;
@@ -125,7 +140,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
 }
 
@@ -158,6 +173,39 @@
     margin: 1rem 0;
 }
 
+
+
+.articles {
+    padding: 12px 24px;
+    border-radius: 10px;
+    display: flex;
+    margin: 0;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.textExample {
+    font-size: 18px;
+}
+
+.example-list {
+    /*
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+
 .rule-list li {
     margin-bottom: 1rem;
     padding-left: 1.5rem;
@@ -171,7 +219,13 @@
     left: 0;
 }
 
-/* ==================== Мобильная версия ==================== */
+.grammaire-image {
+    display: none;
+}
+
+
+
+/* ==================== Media ==================== */
 
 @media only screen and (min-width: 768px) {
     .verb-list {
@@ -179,16 +233,22 @@
     }
 
     .example-box {
+        /*
         display: flex;
-        justify-content: space-around;
+        justify-content: space-around;*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
 
-        .example-list {
-            display: flex;
-        }
+    .example-list {
+        display: flex;
     }
 
     .conjugation-table {
-        width: 50%;
+        /*
+        width: 50%;*/
+        overflow-x: initial;
     }
 
     .table-tablet {
@@ -196,24 +256,67 @@
         width: auto;
     }
 
+    .tablePossessifs {
+        width: 60%;
+    }
+
     .grammaire-title {
         margin-bottom: 0;
+    }
+
+    .grammaire-image {
+        display: block;
+        /*
+        width: 60%;*/
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 3px 6px 15px 5px rgba(190, 69, 69, 0.605);
+    }
+
+    /******grid list******/
+    .parent {
+        display: block;
+    }
+
+    .parent1 {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+        align-items: center;
     }
 }
 
 
-/* ==================== Планшет и десктоп =============== */
+
+/* ====================Tablet & Desktop =============== */
 
 @media only screen and (min-width: 1280px) {
+
     .reverse {
         flex-direction: row-reverse;
         justify-content: space-around;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .example-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+
     }
 
     .example-list {
         padding: 40px;
         gap: 25px;
         align-items: stretch;
+        /*
+        display: grid;
+        grid-auto-rows: minmax(auto, 1fr);
+        row-gap: 10px;
+        padding: 40px;*/
     }
 
     .video {
@@ -224,4 +327,50 @@
     .border {
         border-radius: 20px;
     }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(1fr, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 15px;
+        align-items: center;
+    }
+
+
+    .div2 {
+        grid-row-start: 2;
+    }
+
+    .div3 {
+        grid-row-start: 2;
+    }
+
+    .div5 {
+        grid-row-start: 3;
+    }
+
+    .div6 {
+        grid-row-start: 3;
+    }
+
+    .div7 {
+        grid-row-start: 4;
+    }
+
+    .div8 {
+        grid-row-start: 4;
+    }
+
+    .rule1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+
+    /*
+    .grammaire-image {
+        width: 40%;
+    }*/
 }

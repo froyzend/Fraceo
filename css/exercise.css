@@ -33,23 +33,6 @@ h2.exercices-title {
     margin-bottom: 10px;
 }
 
-input[type="text"],
-select {
-    padding: 10px;
-    width: 100%;
-    max-width: 300px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-/*
- input[type="text"]:focus,
- select:focus {
-     border-color: #e91e63;
- }*/
 
 
 .check-vocab-btn,
@@ -97,7 +80,7 @@ p[id^="result"]:not(.correct) {
     margin-top: 40px;
 }
 
-.exercise input[type="radio"],
+.inputRadio,
 .exercise label {
     margin-right: 10px;
     margin-bottom: 10px;
@@ -109,21 +92,42 @@ p[id^="result"]:not(.correct) {
     margin-bottom: 10px;
 }
 
-/* Увеличенные области для выбора */
-select,
-input[type="text"] {
+
+.selectExercice {
     font-size: 1.1rem;
     padding: 12px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
 }
 
-input[type="radio"] {
+.selectExercice:focus {
+    border-color: #e91e63;
+}
+
+.inputRadio {
     width: 20px;
     height: 20px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px #e91e63;
+
+.inputText {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.inputText:focus {
+    border-color: #e91e63;
 }
