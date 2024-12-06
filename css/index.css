@@ -34,21 +34,7 @@
     margin-bottom: 1.5rem;
 }
 
-.hero-button {
-    border-radius: 50px;
-    color: white;
-    background: linear-gradient(90deg, #e13690 0.52%, #f97e83 100%);
-    padding: 0.75rem 2rem;
-    border: none;
-    outline: none;
-    margin-bottom: 15px;
-    font-size: 20px;
-    transition: background 0.3s ease-in-out;
-}
 
-.hero-button:hover {
-    background: linear-gradient(90deg, #f97e83 0.52%, #e13690 100%);
-}
 
 .hero-content {
     padding: 20px;
@@ -57,6 +43,33 @@
 .hero-image {
     display: none;
 }
+
+
+.hero-button {
+    border-radius: 50px;
+    /* Закругляем углы */
+    color: white;
+    background: radial-gradient(circle, #e13690 0.52%, #f97e83 100%);
+    padding: 0.75rem 2rem;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.hero-button:hover {
+    background: radial-gradient(circle, rgba(247, 150, 192, 1) 0%, rgba(118, 174, 241, 1) 100%);
+    color: #131314;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.35),
+        inset 3px 3px 6px rgba(255, 255, 255, 0.7);
+}
+
 
 /**********objective-section*********/
 

@@ -106,7 +106,10 @@ img {
     font-weight: 500;
     font-size: 16px;
     color: #000;
+}
 
+.faq-reponse:last-child {
+    margin: 10px 0;
 }
 
 /* Раздел "Контакты" */
