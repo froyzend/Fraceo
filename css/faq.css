@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-h1,
+
 h2,
 h4,
 p,
@@ -29,18 +29,22 @@ img {
     margin-bottom: 40px;
 }
 
-.f-section h1 {
+.faq-title {
+    font-family: var(--font-family);
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 48px;
     color: var(--colorrose);
-    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
 }
 
-.f-section p {
+.faq-description {
+    font-family: var(--font-family);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 18px;
     color: var(--color-text2);
-    padding: 20px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .faq-container {
@@ -50,13 +54,19 @@ img {
     align-items: center;
 }
 
-
+.activeBtn:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    /*
+    background: rgba(242, 242, 242, 0.23);*/
+}
 
 .accordion {
     background: inherit;
     color: #444;
     padding: 18px;
     border: none;
+    border-radius: 15px;
     text-align: left;
     width: 100%;
     transition: background-color 0.4s ease;
@@ -66,6 +76,7 @@ img {
 .active {
     background: var(--bg-rose);
     color: var(--colorrose);
+
 }
 
 .accordion:after {
@@ -82,10 +93,20 @@ img {
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 0 24px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.4s ease-out;
+}
+
+
+.faq-reponse {
+    font-family: var(--font-family);
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+
 }
 
 /* Раздел "Контакты" */
@@ -209,6 +230,12 @@ img {
 }
 
 @media (min-width: 1128px) {
+
+    .faq-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
     .contactGrid {
         flex-direction: row;
         gap: 40px;

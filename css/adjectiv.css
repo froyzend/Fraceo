@@ -1,0 +1,198 @@
+/****************************Fonts*/
+.adjectifTitle {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--colorrose);
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+
+.adjectif-texthero {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    max-width: 575px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.adjectifList-item {
+    font-family: var(--font3);
+    font-weight: 500;
+    font-size: 18px;
+    color: #f2439f;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: var(--colormaingris);
+    border: 1px solid var(--colorrose);
+    border-radius: 25px;
+    padding: 12px;
+    text-align: center;
+    width: 364px;
+    height: 45px;
+    transition: background-color 0.4s ease, color 0.4s ease-in-out;
+}
+
+.adjectifList-item:hover {
+    background-color: #f2439f;
+    color: #fff;
+}
+
+/*******flex*/
+.totalContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.adjectifFlex {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+/*****************section2********************/
+
+.color {
+    background: linear-gradient(90deg, #e13690 0.52%, #f97e83 100%);
+}
+
+.adjectif-subtitle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.adjectifDescription {
+    font-family: var(--second-family);
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+.cardsAdjectiv-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.cardAdjectiv {
+    border-radius: 30px;
+    padding: 38px 25px;
+    max-width: 100%;
+    /*
+    background: var(--color-white2);*/
+}
+
+.imgCard {
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+.container-textCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.skills-card {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    text-align: center;
+}
+
+.explicacion {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+}
+
+/***************************Media*************/
+@media (min-width:375px) {
+    .adjectifList {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .adjectifTitle {
+        margin-bottom: 30px;
+    }
+
+    .adjectifList {
+        display: grid;
+        grid-gap: 20px;
+
+        .item2 {
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+
+        .item3 {
+            grid-row-start: 3;
+        }
+    }
+
+    .imgHero-adjectif {
+        display: none;
+    }
+
+
+    /**************************************/
+
+}
+
+@media (min-width:1280px) {
+    .adjectifTitle {
+        margin-bottom: 40px;
+    }
+
+    .adjectifFlex {
+        max-width: 550px;
+    }
+
+    .totalContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .adjectifList {
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: auto auto;
+        grid-gap: 25px;
+    }
+
+    .imgHero-adjectif {
+        display: block;
+    }
+
+    .cardsAdjectiv-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .cardAdjectiv {
+        max-width: 340px;
+        height: 545px;
+    }
+}
