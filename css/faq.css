@@ -1,171 +1,249 @@
-.f-section {
+.text-center {
     text-align: center;
+}
+
+h1,
+h2,
+h4,
+p,
+label {
+    font-family: var(--second-family);
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.faq-container img {
+    display: none;
+}
+
+/* Раздел FAQ */
+.f-section {
     margin-bottom: 40px;
 }
 
 .f-section h1 {
-    font-family: var(--second-family);
     font-weight: 600;
-    font-size: 48px;
+    font-size: 2.5rem;
     color: var(--colorrose);
     padding: 10px;
 }
 
 .f-section p {
-    font-family: var(--second-family);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1rem;
     color: var(--color-text2);
     padding: 20px;
 }
 
 .faq-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
-    margin: 20px 0;
 }
 
-.faq-container img {
-    width: 40%;
+
+
+.accordion {
+    background: inherit;
+    color: #444;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.4s ease;
 }
 
-.f-questions {
+.accordion:hover,
+.active {
+    background: var(--bg-rose);
+    color: var(--colorrose);
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Plus symbol */
+    font-size: 13px;
+    color: #777;
+    float: right;
+}
+
+.active:after {
+    content: '\2796';
+    /* Minus symbol */
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Раздел "Контакты" */
+.contact-subtitle {
+    /*
+   
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--text-dark);*/
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.contactGrid {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
 }
 
-.f-question {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
-    background-color: #f9f9f9 !important;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 5px 0;
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 30px;
-}
-
-.f-question:hover {
-    background: #f1f1f1;
-}
-
-.plus {
-    color: var(--rose2);
-    padding: 0px 10px;
-    font-style: bold;
-}
-
-/*thw frequtnly asked question contact section */
-.contact-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.contact-info,
-.contact-form {
-    flex: 1;
-    min-width: 300px;
-    margin: 10px;
-    padding: 20px;
-    color: #000;
-    border-radius: 8px;
-}
 
 .contact-info {
-    border-radius: 15px;
-    width: 537px;
-    height: 583px;
     background: var(--rose2);
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.contact-form {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: aliceblue;
 }
 
 .contact-info h2,
 .contact-form h2 {
     margin-top: 0;
-    font-family: var(--second-family);
     font-weight: 600;
-    font-size: 36px;
-    color: #000;
+    font-size: 1.5rem;
 }
 
-.contact-info h2 {
-    color: var(--color);
-}
-
-.contact-info p {
-    margin: 10px 0;
-    font-family: var(--second-family);
-    font-size: 20px;
-    color: #fff;
-}
-
-.contact-info h4 {
-    font-family: var(--second-family);
+.ville {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-family: var(--font-family);
     font-weight: 600;
     font-size: 32px;
     color: #fff;
 }
 
-.contact-form input {
-    padding: 10px;
-    margin: 10px 0;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: var(--colormaingris);
-    border: 1px solid rgba(21, 19, 19, 0.76);
-    border-radius: 10px;
-    width: 519px;
-    height: 40px;
+.adress {
+    font-size: 1rem;
+    margin: 5px 0 15px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
 }
 
-.contact-form textarea {
-    padding: 10px;
-    margin: 10px 0;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: var(--colormaingris);
-    border: 1px solid rgba(21, 19, 19, 0.76);
-    border-radius: 10px;
-    width: 519px;
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .contact-form label {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 24px;
-    color: #000;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    background: var(--colormaingris);
+    border: 1px solid rgba(21, 19, 19, 0.76);
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1rem;
 }
 
 .contact-form button {
     background: var(--rose2);
-    width: 519px;
-    border-radius: 40px;
     color: #fff;
-    border: none;
     padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .faq-illustration {
+.contact-form button:hover {
+    background: var(--colorrose);
+}
+
+
+
+/* Адаптивность */
+@media (min-width: 768px) {
+    .contactGrid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 30px;
+    }
+
+    .contact-form textarea {
+        min-height: 150px;
+    }
+
+    .faq-container img {
+        display: block;
+        max-width: 45%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1128px) {
+    .contactGrid {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .contact-info {
+        flex: 1;
+    }
+
+    .contact-form {
+        flex: 2;
+        display: flex;
         flex-direction: column;
     }
 
-    .f-questions {
-        width: 100%;
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        max-width: 600px;
     }
 
-    .f-question {
-        width: 100%;
+    .contact-form button {
+        align-self: flex-end;
+        width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-container img {
+        max-width: 80%;
     }
 
     .contact-section {
         flex-direction: column;
+        /* Контактная информация и форма идут друг под другом */
     }
 }

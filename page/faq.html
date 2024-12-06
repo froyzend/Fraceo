@@ -41,61 +41,84 @@
       </div>
     </header>
     <main>
-      <section class="container-f">
-        <div class="f-section">
+      <section>
+        <div class="f-section container">
             <h1>Questions fréquemment posées</h1>
             <p>Trouvez rapidement les réponses à vos questions sur le niveau A1</p>
             <div class="faq-container">
                 <img src="../img/photo.webp" alt="f photo">
-                <div class="f-questions">
-                    <div class="f-question">
-                        Combien de temps faut-il pour atteindre le niveau A1 ?  
-                        <span class="plus">+</span>
+                <div>
+                <div>
+                  <button class="accordion"> Combien de temps faut-il pour atteindre le niveau A1 ?</button>
+                    <div class="panel">
+                        <p class="faq-reponse">En général, il faut compter entre 80 et 100 heures de formation pour atteindre le niveau A1 du Cadre européen commun de référence pour les langues (CECRL).</p>
                     </div>
-                    <div class="f-question">
-                        Combien de temps faut-il pour atteindre le niveau A1 ?  
-                        <span class="plus"> + </span>
+                </div>
+                <div>
+                  <button class="accordion">Quelles sont les compétences à acquérir pour le niveau A1 ? </button>
+                      <div class="panel">
+                        <p class="faq-reponse">Au niveau A1, l'objectif est d'être capable de comprendre et d'utiliser des expressions familières et quotidiennes ainsi que des énoncés très simples pour satisfaire des besoins concrets. L'accent est mis sur l'acquisition des bases de la langue.</p>
                     </div>
-                    <div class="f-question">
-                        Combien de temps faut-il pour atteindre le niveau A1 ?  
-                        <span class="plus"> +</span>
+                </div>
+                   <div>
+                  <button class="accordion">Que comprend le programme de formation pour le niveau A1 ? </button>
+                      <div class="panel">
+                        <p class="faq-reponse">Le programme couvre les compétences de compréhension et d'expression orales et écrites au niveau débutant. Il inclut l'apprentissage du vocabulaire usuel, de la grammaire élémentaire et de la phonétique.</p>
                     </div>
-                    <div class="f-question">
-                        Combien de temps faut-il pour atteindre le niveau A1 ?  
-                        <span class="plus">+</span>
+                </div>
+                    <div>
+                  <button class="accordion">Comment est évalué le progrès au niveau A1 ?</button>
+                      <div class="panel">
+                        <p class="faq-reponse"> Le progrès est évalué à travers des exercices réguliers, des devoirs et des tests de positionnement. Des rétroactions personnalisées permettent de mesurer l'acquisition des compétences visées.</p>
                     </div>
-                    <div class="f-question">
-                        Combien de temps faut-il pour atteindre le niveau A1 ?  
-                        <span class="plus">+</span>
+                </div>
+                   <div>
+                  <button class="accordion">Est-il possible de passer un examen certifiant le niveau A1 ? </button>
+                      <div class="panel">
+                        <p class="faq-reponse">Oui, il existe des examens reconnus comme le DELF A1 qui permettent d'obtenir une certification officielle du niveau A1 en français.</p>
                     </div>
+                </div>
+                 <div>
+                  <button class="accordion">Quels sont les supports pédagogiques utilisés pour le niveau A1 ? </button>
+                      <div class="panel">
+                        <p class="faq-reponse">Les apprenants reçoivent un manuel de cours, des fiches d'exercices, du matériel audio et vidéo ainsi que l'accès à des ressources en ligne complémentaires.</p>
+                    </div>
+                </div>
+                </div>
                 </div>
             </div>
         </div>
       </section>
 
         <!-- Contact Section -->
-        <section class="contact-section">
-            <div class="contact-info">
-                <h2>Nous contacter</h2>
-                <h4>Paris</h4><p><br>123 Avenue des Champs-Élysées, Paris 75008</p>
-                <h4>Lyon</h4><p><br>45 Rue de la République, Lyon 69002</p>
-                <h4>Marseille</h4><p><br>89 La Canebière, Marseille 13001</p>
-            </div>
+        <section class="padding">
+          <div class="container">
+            <h2 class="contact-subtitle">Vous avez des questions ou des remarques ? N'hésitez pas à nous écrire !</h2>
+            <div class="contactGrid">  
+              <div class="contact-info">
+                  <h2>Nous contacter</h2>
+                    <h4 class="ville">Paris</h4><p><br>123 Avenue des Champs-Élysées, Paris 75008</p>
+                    <h4 class="ville">Lyon</h4>
+                    <p class="adress"><br>45 Rue de la République, Lyon 69002</p>
+                    <h4 class="ville">Marseille</h4><p class="adress"><br>89 La Canebière, Marseille 13001</p>
+              </div>
             <div class="contact-form">
-                <h2>Nous contacter</h2>
-                <form>
+                <h2 class="contact-subtitle">Nous contacter</h2>
+                <form class="form">
                     <label for="name">Nom</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
                     
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
                     
                     <label for="message">Comment pouvons-nous vous aider ?</label>
-                    <textarea id="message" name="message"></textarea>
+                    <textarea rows="7" id="message" name="message" placeholder="Votre message" required></textarea>
                     
                     <button type="submit">Envoyer</button>
                 </form>
             </div>
+            </div>
+          </div>
           </section>
     </main>
     <footer class="footer">
@@ -141,6 +164,22 @@
 </button>
       </div>
     </footer>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
