@@ -39,7 +39,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -47,34 +47,106 @@
 
 .menu-header-open {
     background-color: white;
-    padding: 20px;
+    padding: 12px 24px;
+    position: absolute;
+    right: 0;
     border-radius: 8px;
     max-width: 300px;
-    width: 100%;
+    width: 50%;
+    height: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 
 .menu-header-list {
-    list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 30% 0 0;
+}
+
+.menu-header-list li {
+    margin-bottom: 25px;
+}
+
+.menu-header-list .menu-link {
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.menu-header-list .menu-link:hover {
+    color: var(--colorrose);
+    border-bottom: 2px solid var(--colorrose);
+    /* Подчёркивание при наведении */
 }
 
 .close-button {
-    background-color: #ff69b4;
-    color: white;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #1f1c1c;
     border: none;
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 24px;
+    font-weight: 500;
     cursor: pointer;
     border-radius: 4px;
+    transition: transform 0.2s, color 0.3s;
+}
+
+.close-button:hover {
+    transform: rotate(90deg);
+    /* Эффект вращения при наведении */
+    color: var(--colorrose);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        /* Начальная позиция чуть выше */
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        /* Конечная позиция */
+        opacity: 1;
+    }
 }
 
 .header-menu {
     display: none;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
 
 
 @media only screen and (min-width: 1280px) {

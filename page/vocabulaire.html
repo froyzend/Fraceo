@@ -21,7 +21,7 @@
         <!--Menu-->
         <nav class="header-menu">
           <ul class="menu menu-container">
-            <li><a class="menu-link" href="../index.html">Home</a></li>
+            <li><a class="menu-link" href="../index.html">Accuel</a></li>
             <li>
               <a class="menu-link" href="#">Adjectif</a>
             </li>
@@ -29,12 +29,8 @@
               <a class="menu-link" href="#">Cours</a>
               <ul class="dropdown-content">
                 <li><a class="drop-link" href="./cours.html">Grammaire</a></li>
-                <li>
-                  <a class="drop-link" href="#">Vocabulaire</a>
-                </li>
-                <li>
-                  <a class="drop-link" href="./exercices.html">Exercices</a>
-                </li>
+                <li><a class="drop-link" href="./vocabulaire.html">Vocabulaire</a></li>
+                <li><a class="drop-link" href="./exercices.html">Exercices</a></li>
               </ul>
             </li>
             <li>
@@ -46,24 +42,15 @@
       </div>
       <div class="menu-header">
         <div class="menu-header-open">
-          <button class="close-button" type="button">close</button>
+          <button class="close-button" type="button">×</button>
 
-          <ul class="menu menu-container">
-            <li><a class="menu-link" href="#">Home</a></li>
-            <li>
-              <a class="menu-link" href="./adjectif.html">Adjectif</a>
-            </li>
-            <li class="dropdown">
-              <a class="menu-link" href="#">Cours</a>
-              <ul class="dropdown-content">
-                <li><a class="drop-link" href="./cours.html">Grammaire</a></li>
-                <li><a class="drop-link" href="#">Vocabulaire</a></li>
-                <li><a class="drop-link" href="#">Exercices</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="menu-link" href="./resourse.html">Resourse</a>
-            </li>
+          <ul class="menu-header-list">
+             <li><a class="menu-link" href="#">Accuel</a></li>
+            <li><a class="menu-link" href="./adjectif.html">Adjectif</a></li>
+            <li><a class="menu-link" href="./cours.html">Grammaire</a></li>
+            <li><a class="menu-link" href="./vocabulaire.html">Vocabulaire</a></li>
+            <li><a class="menu-link" href="./exercices.html">Exercices</a></li>
+            <li><a class="menu-link" href="./resourse.html">Resourse</a></li>
             <li><a class="menu-link" href="./faq.html">Contact Us</a></li>
           </ul>
         </div>
@@ -77,18 +64,19 @@
         <use href="../img/symbol-defs.svg#icon-study"></use>
       </svg>
     </h1>
+   
     <p class="vocabulaire-description">
-      "La famille", "les aliments" ou "les parties du corps" : pour apprendre
-      de nouveaux mots et expressions de la vie quotidienne.
+      Découvrez des mots utiles en français avec leur traduction anglaise. Utilisez la recherche pour trouver un mot en français ou en anglais, ou explorez les catégories pour enrichir votre vocabulaire.
     </p>
+    <p  class="vocabulaire-description">Discover useful words in French with their English translation. Use the search to find a word in French or English, or explore the categories to enrich your vocabulary.</p>
   
-  <div class="search-container">
-    <input class="search-input" type="text" id="searchInput" placeholder="Rechercher..." />
-    <svg class="search-icon" width="24" height="24">
-      <use href="../img/symbol-defs.svg#icon-search"></use>
-    </svg>
-  </div>
-  </div>
+    <div class="search-container">
+        <input class="search-input" type="text" id="searchInput" placeholder="Rechercher...">
+        <svg class="search-icon" width="24" height="24">
+            <use href="../img/symbol-defs.svg#icon-search"></use>
+        </svg>
+    </div>
+</div>
 </section>
   <section class="content-container">
     <div class="container flex-containerVocabulaire">
@@ -156,16 +144,17 @@
           <p class="footer-copyright">
             © 2024 Cours de français A1. Tous droits réservés.
           </p>
-          <button id="scrollToTopBtn" class="scroll-btn" title="Go to top">
-        <span class="arrowScroll">
-          <svg width="24" height="24" fill="#fff">
-            <use href="../img/symbol-defs.svg#icon-arrow-up">
-            </use>
-          </svg>
+        <button id="scrollToTopBtn" class="scroll-btn" title="Go to top">
+          <span class="arrowScroll">
+            <svg width="24" height="24" fill="#fff">
+              <use href="../img/symbol-defs.svg#icon-arrow-up">
+              </use>
+            </svg>
         </span>
-</button>
+      </button>
       </div>
     </footer>
     <script type="module" src="../js/script.js"></script>
+    <script type="module" src="../main.js"></script>
   </body>
 </html>

@@ -376,7 +376,7 @@
         gap: 8px;
     }
 
-    .flex {
+    .flexGrammaire {
         display: flex;
         justify-content: space-around;
     }

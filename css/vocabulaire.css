@@ -203,6 +203,7 @@ body {
     text-align: center;
 }
 
+/*
 ul {
     list-style: none;
     padding: 0;
@@ -227,7 +228,7 @@ li {
 
 li:last-child {
     border-bottom: none;
-}
+}*/
 
 li span {
     font-weight: 700;

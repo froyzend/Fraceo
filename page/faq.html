@@ -20,9 +20,9 @@
         <!--Menu-->
         <nav class="header-menu">
           <ul class="menu menu-container">
-            <li><a class="menu-link" href="../index.html">Home</a></li>
+            <li><a class="menu-link" href="../index.html">Accuel</a></li>
             <li>
-              <a class="menu-link" href="./adjectif.html">Adjectif</a>
+              <a class="menu-link" href="#">Adjectif</a>
             </li>
             <li class="dropdown">
               <a class="menu-link" href="#">Cours</a>
@@ -35,9 +35,24 @@
             <li>
               <a class="menu-link" href="./resourse.html">Resourse</a>
             </li>
-            <li><a class="menu-link" href="#">Contact Us</a></li>
+            <li><a class="menu-link" href="./faq.html">Contact Us</a></li>
           </ul>
         </nav>
+      </div>
+      <div class="menu-header">
+        <div class="menu-header-open">
+          <button class="close-button" type="button">×</button>
+
+          <ul class="menu-header-list">
+             <li><a class="menu-link" href="#">Accuel</a></li>
+            <li><a class="menu-link" href="./adjectif.html">Adjectif</a></li>
+            <li><a class="menu-link" href="./cours.html">Grammaire</a></li>
+            <li><a class="menu-link" href="./vocabulaire.html">Vocabulaire</a></li>
+            <li><a class="menu-link" href="./exercices.html">Exercices</a></li>
+            <li><a class="menu-link" href="./resourse.html">Resourse</a></li>
+            <li><a class="menu-link" href="./faq.html">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -98,14 +113,15 @@
             <div class="contactGrid">  
               <div class="contact-info">
                   <h2>Nous contacter</h2>
-                    <h4 class="ville">Paris</h4><p><br>123 Avenue des Champs-Élysées, Paris 75008</p>
+                    <h4 class="ville">Paris</h4><p class="adress"><br>123 Avenue des Champs-Élysées, Paris 75008</p>
                     <h4 class="ville">Lyon</h4>
                     <p class="adress"><br>45 Rue de la République, Lyon 69002</p>
                     <h4 class="ville">Marseille</h4><p class="adress"><br>89 La Canebière, Marseille 13001</p>
               </div>
             <div class="contact-form">
-                <h2 class="contact-subtitle">Nous contacter</h2>
+                
                 <form class="form">
+                  <h2 class="contact-subtitle">Nous contacter</h2>
                     <label for="name">Nom</label>
                     <input type="text" id="name" name="name" placeholder="Votre nom" required>
                     
@@ -155,14 +171,14 @@
           <p class="footer-copyright">
             © 2024 Cours de français A1. Tous droits réservés.
           </p>
-          <button id="scrollToTopBtn" class="scroll-btn" title="Go to top">
-        <span class="arrowScroll">
-          <svg width="24" height="24" fill="#fff">
-            <use href="../img/symbol-defs.svg#icon-arrow-up">
-            </use>
-          </svg>
-        </span>
-</button>
+      <button id="scrollToTopBtn" class="scroll-btn" title="Go to top">
+          <span class="arrowScroll">
+              <svg width="24" height="24" fill="#fff">
+                <use href="../img/symbol-defs.svg#icon-arrow-up">
+                </use>
+              </svg>
+            </span>
+      </button>
       </div>
     </footer>
     <script>
@@ -180,7 +196,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-</script>
+    </script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
