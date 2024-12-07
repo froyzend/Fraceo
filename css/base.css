@@ -55,7 +55,7 @@ h3 {
     color: #fff;
 }
 
-*/ .number {
+.number {
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 50px;
@@ -117,9 +117,7 @@ p {
         font-size: 20px;
     }
 
-    .number {
-        font-size: 70px;
-    }
+
 
     .section {
         padding-top: 80px;

@@ -70,6 +70,50 @@
         inset 3px 3px 6px rgba(255, 255, 255, 0.7);
 }
 
+/*************************************/
+.compétences {
+    background: linear-gradient(90deg, #e13690 0.52%, #f97e83 100%);
+    color: #fff;
+    padding: 20px 0;
+
+}
+
+.compétencesTitle {
+    font-family: var(--font4);
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #fff;
+}
+
+.compétences-subtitle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+
+.compétence-texte {
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+.compétencesItem {
+    padding: 20px;
+
+}
+
+.compétence-miniList {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    margin-bottom: 10px;
+}
 
 /**********objective-section*********/
 
@@ -221,6 +265,22 @@
         border-radius: 50%;
     }
 
+    /********************************/
+
+    .compétence {
+        padding: 40px 0;
+    }
+
+    .compétencesList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .compétence-miniList {
+        margin-bottom: 20px;
+    }
+
     /**********objective-section*********/
 
     .objectif-textMargin {
@@ -265,6 +325,22 @@
 
     .objectif-textMargin {
         margin-bottom: 50px;
+    }
+
+    .compétences {
+        padding: 80px 0;
+    }
+
+    .compétencesList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .compétences-title {
+        margin-bottom: 40px;
+    }
+
+    .compétences-subtitle {
+        font-size: 20px;
     }
 }
 
