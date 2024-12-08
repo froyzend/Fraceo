@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Exercices</title>
     <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body>
     <header class="header">
       <div class="container container-header">
-        <a class="logo-link" href="#">
+        <a class="logo-link" href="../index.html">
           <img src="../img/logo.png" alt="Françeó" loading="lazy" width="140" />
         </a>
         <div class="open-menu-button" type="button">
@@ -22,7 +22,7 @@
           <ul class="menu menu-container">
             <li><a class="menu-link" href="../index.html">Accuel</a></li>
             <li>
-              <a class="menu-link" href="#">Adjectif</a>
+              <a class="menu-link" href="./adjectif.html">Adjectif</a>
             </li>
             <li class="dropdown">
               <a class="menu-link" href="#">Cours</a>
@@ -35,7 +35,7 @@
             <li>
               <a class="menu-link" href="./resourse.html">Resourse</a>
             </li>
-            <li><a class="menu-link" href="./faq.html">Contact Us</a></li>
+            <li><a class="menu-link" href="./faq.html">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -50,7 +50,7 @@
             <li><a class="menu-link" href="./vocabulaire.html">Vocabulaire</a></li>
             <li><a class="menu-link" href="./exercices.html">Exercices</a></li>
             <li><a class="menu-link" href="./resourse.html">Resourse</a></li>
-            <li><a class="menu-link" href="./faq.html">Contact Us</a></li>
+            <li><a class="menu-link" href="./faq.html">Contact</a></li>
           </ul>
           <div class="social-links">
             <a rel="noopener noreferrer"  href="https://t.me/froyzend" class="social-link" target="_blank" aria-label="Telegram">
@@ -290,7 +290,7 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-top">
-          <a href="#">
+          <a href="./exercices.html">
             <img
               src="../img/logo.png"
               alt="Françeó"
@@ -305,13 +305,13 @@
               <li class="footer-dropdown">
               <a class="footer-link" href="#">Cours</a>
               <ul class="footer-dropdown-content">
-                <li><a class="drop-link" href="#">Grammaire</a></li>
+                <li><a class="drop-link" href="../page/cours.html">Grammaire</a></li>
                 <li><a class="drop-link" href="./vocabulaire.html">Vocabulaire</a></li>
-                <li><a class="drop-link" href="#">Exercices</a></li>
+                <li><a class="drop-link" href="./exercices.html">Exercices</a></li>
               </ul>
             </li>
               <li><a class="footer-link" href="./resourse.html">Resourse</a></li>
-              <li><a class="footer-link" href="./faq.html">Contact Us</a></li>
+              <li><a class="footer-link" href="./faq.html">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -338,14 +338,16 @@
   const resultElement = document.getElementById(resultElementId);
   let userAnswer;
 
-  if (type === 'vocab') {
-    userAnswer = document.getElementById(`vocab-q${questionNumber}`).value; // Text input for vocab
-    if(userAnswer.trim() === ""){ // Handle empty answer
-        resultElement.textContent = "❌ Please enter an answer.";
-        resultElement.style.color = "red";
-        return;
-    }
-  } else if (type === 'grammar') {
+ if (type === 'vocab') {
+  const radio = document.querySelector(`input[name="v${questionNumber}"]:checked`);
+  userAnswer = radio ? radio.value : null; // Handle radio input
+  if (userAnswer === null) { // Handle no answer selected
+      resultElement.textContent = "❌ Please select an answer.";
+      resultElement.style.color = "red";
+      return;
+  }
+}
+ else if (type === 'grammar') {
     const radio = document.querySelector(`input[name="g${questionNumber}"]:checked`);
     const select = document.getElementById(`grammar-q${questionNumber}`);
     userAnswer = radio ? radio.value : (select ? select.value : null); // Handle both radio and select

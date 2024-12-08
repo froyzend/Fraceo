@@ -49,7 +49,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/IMG_3186.JPG");
+    background-image: url("../img/test.JPG");
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,6 +88,7 @@ body {
 
 .flex-containerVocabulaire {
     display: flex;
+    flex-direction: column;
 }
 
 .filters-title {
@@ -120,7 +121,7 @@ body {
     border: none;
     cursor: pointer;
     text-align: left;
-
+    font-size: 14px;
     position: relative;
     padding-left: 35px;
     display: block;
@@ -247,6 +248,13 @@ li span {
     color: #555;
 }
 
+@media(min-width:768px) {
+    .flex-containerVocabulaire {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 @media(min-width:1280px) {
     .filters-title {
         font-size: 36px;
@@ -254,6 +262,7 @@ li span {
 
     .filter-btn {
         padding: 12px 24px;
+        font-size: 16px;
         font-weight: bold;
         padding-left: 35px;
     }
